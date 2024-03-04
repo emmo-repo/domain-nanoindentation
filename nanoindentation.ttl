@@ -130,8 +130,118 @@
 #    Classes
 #################################################################
 
+###  http://emmo.info/emmo/domain/chameo/chameo#CalibrationData
+chameo:CalibrationData rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo/domain/chameo/chameo#CalibrationMeasurement
 chameo:CalibrationMeasurement rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#CalibrationProcess
+chameo:CalibrationProcess rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#CharacterisationEnvironment
+chameo:CharacterisationEnvironment rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#CharacterisationHardware
+chameo:CharacterisationHardware rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#CharacterisationHardwareSpecification
+chameo:CharacterisationHardwareSpecification rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#CharacterisationInstrument
+chameo:CharacterisationInstrument rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#CharacterisationMeasurementProcess
+chameo:CharacterisationMeasurementProcess rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#CharacterisationProperty
+chameo:CharacterisationProperty rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#DataPreparation
+chameo:DataPreparation rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#Detector
+chameo:Detector rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter
+chameo:MeasurementParameter rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#PostProcessingModel
+chameo:PostProcessingModel rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#PrimaryData
+chameo:PrimaryData rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#Probe
+chameo:Probe rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#RawData
+chameo:RawData rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#ReferenceSample
+chameo:ReferenceSample rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/chameo/chameo#SecondaryData
+chameo:SecondaryData rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo/domain/nanoind#Damping
+:Damping rdf:type owl:Class ;
+         rdfs:subClassOf :DynamicProperties .
+
+
+###  http://emmo.info/emmo/domain/nanoind#DynamicProperties
+:DynamicProperties rdf:type owl:Class ;
+                   rdfs:subClassOf chameo:CharacterisationHardwareSpecification ;
+                   emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hardware specification during dynamic super-imposed movements."@en .
+
+
+###  http://emmo.info/emmo/domain/nanoind#HarmonicAmplitude
+:HarmonicAmplitude rdf:type owl:Class ;
+                   rdfs:subClassOf :DynamicProperties .
+
+
+###  http://emmo.info/emmo/domain/nanoind#HarmonicForce
+:HarmonicForce rdf:type owl:Class ;
+               rdfs:subClassOf :DynamicProperties .
+
+
+###  http://emmo.info/emmo/domain/nanoind#HarmonicFrequency
+:HarmonicFrequency rdf:type owl:Class ;
+                   rdfs:subClassOf :DynamicProperties .
+
+
+###  http://emmo.info/emmo/domain/nanoind#HarmonicStiffness
+:HarmonicStiffness rdf:type owl:Class ;
+                   rdfs:subClassOf :DynamicProperties .
+
+
+###  http://emmo.info/emmo/domain/nanoind#SpringStiffness
+:SpringStiffness rdf:type owl:Class ;
+                 rdfs:subClassOf :StaticProperties .
+
+
+###  http://emmo.info/emmo/domain/nanoind#StaticProperties
+:StaticProperties rdf:type owl:Class ;
+                  rdfs:subClassOf chameo:CharacterisationHardwareSpecification ;
+                  emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hardware specification during quasi-static movements."@en .
 
 
 ###  http://emmo.info/emmo/nanoind#EMMO_01338ee7-7c76-4ace-aaf4-fbf001d0dee6
