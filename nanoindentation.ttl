@@ -10,8 +10,7 @@
 @base <https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#> .
 
 <http://emmo.info/emmo/domain/nanoind> rdf:type owl:Ontology ;
-                                        owl:imports <http://emmo.info/emmo/domain/chameo/chameo> ,
-                                                    <https://raw.githubusercontent.com/emmo-repo/EMMO/master/top/annotations.ttl> ;
+                                        owl:imports <http://emmo.info/emmo/domain/chameo/chameo> ;
                                         <http://purl.org/dc/terms/abstract> "Nanoindentation testing ontology developed within the NanoMECommons project."@en ;
                                         <http://purl.org/dc/terms/alternative> "NanoInd" ;
                                         <http://purl.org/dc/terms/bibliographicCitation> "Work under review - not available yet" ;
