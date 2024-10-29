@@ -10,7 +10,7 @@
 @base <https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#> .
 
 <http://emmo.info/emmo/domain/nanoind> rdf:type owl:Ontology ;
-                                        owl:imports <http://emmo.info/emmo/domain/chameo/chameo> ;
+                                        owl:imports <http://w3id.org/emmo-chameo/1.0.0-beta5/chameo> ;
                                         <http://purl.org/dc/terms/abstract> "Nanoindentation testing ontology developed within the NanoMECommons project."@en ;
                                         <http://purl.org/dc/terms/alternative> "NanoInd" ;
                                         <http://purl.org/dc/terms/bibliographicCitation> "Work under review - not available yet" ;
@@ -38,8 +38,8 @@
                                         owl:priorVersion "" ;
                                         owl:versionInfo "1.0.0-alpha1" ;
                                         skos:hiddenLabel "NanoInd" ;
-                                        <http://xmlns.com/foaf/0.1/homepage> <https://github.com/pierluigidelnostro/domain-nanoindentation> ;
-                                        <http://xmlns.com/foaf/0.1/page> <https://github.com/pierluigidelnostro/domain-nanoindentation> .
+                                        <http://xmlns.com/foaf/0.1/homepage> <https://github.com/emmo-repo/domain-nanoindentation> ;
+                                        <http://xmlns.com/foaf/0.1/page> <https://github.com/emmo-repo/domain-nanoindentation> .
 
 #################################################################
 #    Annotation properties
