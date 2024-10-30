@@ -6,11 +6,11 @@
 @prefix emmo: <https://w3id.org/emmo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix chameo: <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> .
+@prefix chameo: <https://w3id.org/emmo/domain/domain-chameo/chameo#> .
 @base <https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#> .
 
 <http://emmo.info/emmo/domain/nanoind> rdf:type owl:Ontology ;
-                                        owl:imports <http://w3id.org/emmo-chameo/1.0.0-beta5/chameo> ;
+                                        owl:imports <https://w3id.org/emmo/domain/domain-chameo/chameo> ;
                                         <http://purl.org/dc/terms/abstract> "Nanoindentation testing ontology developed within the NanoMECommons project."@en ;
                                         <http://purl.org/dc/terms/alternative> "NanoInd" ;
                                         <http://purl.org/dc/terms/bibliographicCitation> "Work under review - not available yet" ;
@@ -29,7 +29,7 @@
                                         <http://purl.org/dc/terms/title> "Nanoindentation Testing Ontology"@en ;
                                         <http://purl.org/ontology/bibo/doi> "" ;
                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "nanoind"@en ;
-                                        <http://purl.org/vocab/vann/preferredNamespaceUri> "http://emmo.info/emmo/domain/chameo/chameo" ;
+                                        <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation" ;
                                         rdfs:comment """Contacts:
 													Gerhard Goldbeck
 													Goldbeck Consulting Ltd (UK)
