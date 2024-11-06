@@ -6,11 +6,11 @@
 @prefix emmo: <https://w3id.org/emmo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix chameo: <https://w3id.org/emmo/domain/domain-chameo/chameo#> .
+@prefix chameo: <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> .
 @base <https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#> .
 
 <http://emmo.info/emmo/domain/nanoind> rdf:type owl:Ontology ;
-                                        owl:imports <https://w3id.org/emmo/domain/domain-chameo/chameo> ;
+                                        owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/chameo> ;
                                         <http://purl.org/dc/terms/abstract> "Nanoindentation testing ontology developed within the NanoMECommons project."@en ;
                                         <http://purl.org/dc/terms/alternative> "NanoInd" ;
                                         <http://purl.org/dc/terms/bibliographicCitation> "Work under review - not available yet" ;
@@ -129,18 +129,8 @@
 #    Classes
 #################################################################
 
-
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ad1e155e-c994-5237-b930-02bd04c1208f
-:EMMO_ad1e155e-c994-5237-b930-02bd04c1208f rdf:type owl:Class ;
-         rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
-		 rdfs:label "Damping"@en ;
-         skos:prefLabel "Damping"@en .
-
-
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_fa1g165e-c993-5137-b910-02bd04c2108f
-:EMMO_fa1g165e-c993-5137-b910-02bd04c2108f rdf:type owl:Class ;
-                   rdfs:subClassOf chameo:CharacterisationHardwareSpecification ;
-                   emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hardware specification during dynamic super-imposed movements."@en .
+###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#CalibrationMeasurement
+chameo:CalibrationMeasurement rdf:type owl:Class .
 
 
 ###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_01338ee7-7c76-4ace-aaf4-fbf001d0dee6
@@ -213,7 +203,7 @@
 
 ###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_09591a7a-39f9-550f-8b87-77bb34f4fb2f
 :EMMO_09591a7a-39f9-550f-8b87-77bb34f4fb2f rdf:type owl:Class ;
-                                           rdfs:subClassOf chameo:CharacterisationInstrument ,
+                                           rdfs:subClassOf chameo:CharacterisationMeasurementInstrument ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
                                                              owl:someValuesFrom :EMMO_ea7f0dd1-87af-5147-a9b9-b085e22a2e06
@@ -864,6 +854,13 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the length and width of the indentation pattern, which will be localised in the sample to form and test the region of interest."@en .
 
 
+###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_aa9c215e-c135-2735-b932-02ad01c0208e
+:EMMO_aa9c215e-c135-2735-b932-02ad01c0208e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
+                                           rdfs:label "HarmonicStiffness"@en ;
+                                           skos:prefLabel "HarmonicStiffness"@en .
+
+
 ###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_aab92d22-65e0-4352-af99-54bab5a17e17
 :EMMO_aab92d22-65e0-4352-af99-54bab5a17e17 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_755dd2db-9d48-42b9-8f68-fffe55cb6edb ;
@@ -887,6 +884,13 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            rdfs:label "ProbabilityDistributionFunction"@en ;
                                            skos:prefLabel "ProbabilityDistributionFunction"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "In probability theory, a probability density function, density function, or density of an absolutely continuous random variable, is a function whose value at any given sample in the sample space can be interpreted as providing a relative likelihood that the value of the random variable would be equal to that sample."@en .
+
+
+###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ad1e155e-c994-5237-b930-02bd04c1208f
+:EMMO_ad1e155e-c994-5237-b930-02bd04c1208f rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
+                                           rdfs:label "Damping"@en ;
+                                           skos:prefLabel "Damping"@en .
 
 
 ###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_b14e3441-698e-43d5-9447-2e46f1219260
@@ -937,6 +941,14 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            rdfs:subClassOf chameo:CalibrationProcess ;
                                            rdfs:label "NanoindentationCalibrationProcess"@en ;
                                            skos:prefLabel "NanoindentationCalibrationProcess"@en .
+
+
+###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_bb9c215e-c135-2735-b932-02ee01c0208e
+:EMMO_bb9c215e-c135-2735-b932-02ee01c0208e rdf:type owl:Class ;
+                                           rdfs:subClassOf chameo:CharacterisationHardwareSpecification ;
+                                           rdfs:label "StaticProperties"@en ;
+                                           skos:prefLabel "StaticProperties"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hardware specification during quasi-static movements."@en .
 
 
 ###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_c5ca1331-654c-5c5f-b272-ec821e2b86b4
@@ -1020,6 +1032,14 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            rdfs:subClassOf :EMMO_a518471c-b749-5c03-bc7e-04f2aba1906e ;
                                            skos:prefLabel "BallTip"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The ball indenter tip is typically made of a hard metal and it is of spherical shape, which facilitates to convert force-displacement data into stress-strain curves, avoiding early yielding of the material due to shape effects."@en .
+
+
+###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_cc9a215a-a135-2715-b932-02ee01c0208e
+:EMMO_cc9a215a-a135-2715-b932-02ee01c0208e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_4977ec05-3708-4e29-8d05-7a11742a2dca ;
+                                           rdfs:label "TipMovementParameter"@en ;
+                                           skos:prefLabel "TipMovementParameter"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the parameters tuned using nanoindenter software that correspond to the control of the nanoindenter tip movement velocity or distance across z-axis."@en .
 
 
 ###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_cccafce4-fffe-55d6-bac4-8e4a4bdb48ce
@@ -1181,12 +1201,25 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The component which is part of a nanoindenter instrument."@en .
 
 
+###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ea9c225e-c135-2537-b932-02ad01c0208e
+:EMMO_ea9c225e-c135-2537-b932-02ad01c0208e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
+                                           rdfs:label "HarmonicAmplitude"@en ;
+                                           skos:prefLabel "HarmonicAmplitude"@en .
+
+
 ###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ef4c77a5-c561-5edc-8bac-456c20e02ed1
 :EMMO_ef4c77a5-c561-5edc-8bac-456c20e02ed1 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_84470b1f-4d4a-46c8-931a-0a8627a4b997 ;
                                            skos:altLabel "NanoindentationDepth"@en ;
                                            skos:prefLabel "NanoindentationDisplacement"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "This value indicates the position of the indenter relative to the sample surface."@en .
+
+
+###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_fa1g165e-c993-5137-b910-02bd04c2108f
+:EMMO_fa1g165e-c993-5137-b910-02bd04c2108f rdf:type owl:Class ;
+                                           rdfs:subClassOf chameo:CharacterisationHardwareSpecification ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hardware specification during dynamic super-imposed movements."@en .
 
 
 ###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_fad76672-5fc8-5f3a-b4e3-9a4566ede225
@@ -1211,30 +1244,16 @@ raw data is a set of (unprocessed) data that is given directly as output from th
 
 ###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_fd9e255e-c435-2237-b932-02ad01c0208e
 :EMMO_fd9e255e-c435-2237-b932-02ad01c0208e rdf:type owl:Class ;
-                   rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
-				   rdfs:label "HarmonicAmplitude"@en ;
-                   skos:prefLabel "HarmonicAmplitude"@en .
-
-
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ea9c225e-c135-2537-b932-02ad01c0208e
-:EMMO_ea9c225e-c135-2537-b932-02ad01c0208e rdf:type owl:Class ;
-               rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
-			   rdfs:label "HarmonicAmplitude"@en ;
-               skos:prefLabel "HarmonicAmplitude"@en .
+                                           rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
+                                           rdfs:label "HarmonicAmplitude"@en ;
+                                           skos:prefLabel "HarmonicAmplitude"@en .
 
 
 ###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_gg9c225e-c135-2537-b932-02ad01c0208e
 :EMMO_gg9c225e-c135-2537-b932-02ad01c0208e rdf:type owl:Class ;
-                   rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
-				rdfs:label "HarmonicFrequency"@en ;
-               skos:prefLabel "HarmonicFrequency"@en .
-
-
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_aa9c215e-c135-2735-b932-02ad01c0208e
-:EMMO_aa9c215e-c135-2735-b932-02ad01c0208e rdf:type owl:Class ;
-                   rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
-			   rdfs:label "HarmonicStiffness"@en ;
-               skos:prefLabel "HarmonicStiffness"@en .
+                                           rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
+                                           rdfs:label "HarmonicFrequency"@en ;
+                                           skos:prefLabel "HarmonicFrequency"@en .
 
 
 ###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#SpringStiffness
@@ -1242,20 +1261,12 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                  rdfs:subClassOf :StaticProperties .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_bb9c215e-c135-2735-b932-02ee01c0208e
-:EMMO_bb9c215e-c135-2735-b932-02ee01c0208e rdf:type owl:Class ;
-                  rdfs:subClassOf chameo:CharacterisationHardwareSpecification ;
-                  emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hardware specification during quasi-static movements."@en ;
-				  rdfs:label "StaticProperties"@en ;
-               skos:prefLabel "StaticProperties"@en .
+###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#StaticProperties
+:StaticProperties rdf:type owl:Class .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_cc9a215a-a135-2715-b932-02ee01c0208e
-:EMMO_cc9a215a-a135-2715-b932-02ee01c0208e rdf:type owl:Class ;
-                      rdfs:subClassOf :EMMO_4977ec05-3708-4e29-8d05-7a11742a2dca ;
-                      rdfs:label "TipMovementParameter"@en ;
-                      skos:prefLabel "TipMovementParameter"@en ;
-                      emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the parameters tuned using nanoindenter software that correspond to the control of the nanoindenter tip movement velocity or distance across z-axis."@en .
+###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#TipMovementParameter
+:TipMovementParameter rdf:type owl:Class .
 
 
 #################################################################
