@@ -58,7 +58,6 @@ jobs:
           --base-iri="https://w3id.org/emmo/domain/nanoindentation#" \
           --iri=https://w3id.org/emmo/domain/nanoindentation \
           nanoindentation.ttl public/nanoindentation.ttl
-tl
         bin/robot reason --reasoner ELK --input public/nanoindentation.ttl --output public/nanoindentation-inferred.ttl
         ontoconvert public/nanoindentation.ttl public/nanoindentation.owl
         ontoconvert public/nanoindentation-inferred.ttl public/nanoindentation-inferred.owl
