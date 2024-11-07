@@ -16,6 +16,11 @@ The Nanoindentation Testing ontology is built with an alignment with CHAMEO and 
 | CHAMEO              | 1.0.0-beta5       |
 
 
+## Resources
+- Pre-inferred ontology: https://emmo-repo.github.io/domain-nanoindentation/nanoindentation-inferred.ttl
+- [Class index](https://emmo-repo.github.io/domain-nanoindentation/nanoindentation.html)
+
+
 ## Attribution and Credits
 
 ### Authors
