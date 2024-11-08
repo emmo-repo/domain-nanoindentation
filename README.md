@@ -16,6 +16,13 @@ The Nanoindentation Testing ontology is built with an alignment with CHAMEO and 
 | CHAMEO              | 1.0.0-beta5       |
 
 
+## Resources
+- Squashed ontology (all imported ontologies included in the same turtle file for fast and robust loading):
+[https://w3id.org/emmo/domain/nanoindentation/](https://w3id.org/emmo/domain/nanoindentation/turtle)
+- Pre-inferred ontology: https://w3id.org/emmo/domain/nanoindentation/inferred
+- [Class index](https://w3id.org/emmo/domain/nanoindentation/)
+
+
 ## Attribution and Credits
 
 ### Authors

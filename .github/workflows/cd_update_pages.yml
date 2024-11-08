@@ -68,9 +68,9 @@ jobs:
         run: |
           ontodoc \
             --iri-regex=https://w3id.org/emmo/domain/nanoindentation \
-            nanoindentation.ttl \
+            public/nanoindentation-inferred.ttl \
             build/nanoindentation.rst
-          cp README.md build/
+          cp -f README.md build/
           sphinx-build "build/" "public/"
 
       - name: Publish on GitHub Pages
