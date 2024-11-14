@@ -7,40 +7,40 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix chameo: <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> .
-@base <https://w3id.org/emmo/domain/nanoindentation#> .
+@base <https://w3id.org/emmo/domain/nanoindentation> .
 
 <https://w3id.org/emmo/domain/nanoindentation> rdf:type owl:Ontology ;
-                                        owl:versionIRI <https://w3id.org/emmo/domain/1.0.0-alpha1/nanoindentation> ;
-                                        owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/chameo> ;
-                                        <http://purl.org/dc/terms/abstract> "Nanoindentation testing ontology developed within the NanoMECommons project."@en ;
-                                        <http://purl.org/dc/terms/alternative> "NanoInd" ;
-                                        <http://purl.org/dc/terms/bibliographicCitation> "Work under review - not available yet" ;
-                                        <http://purl.org/dc/terms/contributor> "Goldbeck Consulting Ltd (UK)" ;
-                                        <http://purl.org/dc/terms/created> "2023-11-29" ;
-                                        <http://purl.org/dc/terms/creator> "Gerhard Goldbeck" ,
-                                                                           "Pierluigi Del Nostro" ;
-                                        <http://purl.org/dc/terms/description> "Nanoindentation testing ontology"@en ;
-                                        <http://purl.org/dc/terms/hasFormat> <https://www.w3.org/TR/turtle/> ;
-                                        <http://purl.org/dc/terms/identifier> "http://emmo.info/emmo/domain/nanoind" ;
-                                        <http://purl.org/dc/terms/issued> "" ;
-                                        <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                        <http://purl.org/dc/terms/modified> "2023-10-23T15:00:00Z" ;
-                                        <http://purl.org/dc/terms/publisher> "EMMC ASBL" ;
-                                        <http://purl.org/dc/terms/source> "" ;
-                                        <http://purl.org/dc/terms/title> "Nanoindentation Testing Ontology"@en ;
-                                        <http://purl.org/ontology/bibo/doi> "" ;
-                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "nanoind"@en ;
-                                        <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation" ;
-                                        rdfs:comment """Contacts:
+                                                owl:versionIRI <https://w3id.org/emmo/domain/1.0.0-alpha1/nanoindentation> ;
+                                                owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/chameo> ;
+                                                <http://purl.org/dc/terms/abstract> "Nanoindentation testing ontology developed within the NanoMECommons project."@en ;
+                                                <http://purl.org/dc/terms/alternative> "NanoInd" ;
+                                                <http://purl.org/dc/terms/bibliographicCitation> "Work under review - not available yet" ;
+                                                <http://purl.org/dc/terms/contributor> "Goldbeck Consulting Ltd (UK)" ;
+                                                <http://purl.org/dc/terms/created> "2023-11-29" ;
+                                                <http://purl.org/dc/terms/creator> "Gerhard Goldbeck" ,
+                                                                                   "Pierluigi Del Nostro" ;
+                                                <http://purl.org/dc/terms/description> "Nanoindentation testing ontology"@en ;
+                                                <http://purl.org/dc/terms/hasFormat> <https://www.w3.org/TR/turtle/> ;
+                                                <http://purl.org/dc/terms/identifier> "http://emmo.info/emmo/domain/nanoind" ;
+                                                <http://purl.org/dc/terms/issued> "" ;
+                                                <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                <http://purl.org/dc/terms/modified> "2023-10-23T15:00:00Z" ;
+                                                <http://purl.org/dc/terms/publisher> "EMMC ASBL" ;
+                                                <http://purl.org/dc/terms/source> "" ;
+                                                <http://purl.org/dc/terms/title> "Nanoindentation Testing Ontology"@en ;
+                                                <http://purl.org/ontology/bibo/doi> "" ;
+                                                <http://purl.org/vocab/vann/preferredNamespacePrefix> "nanoind"@en ;
+                                                <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation" ;
+                                                rdfs:comment """Contacts:
 													Gerhard Goldbeck
 													Goldbeck Consulting Ltd (UK)
 													email: gerhard@goldbeck-consulting.com"""@en ;
-                                        owl:backwardCompatibleWith "" ;
-                                        owl:priorVersion "" ;
-                                        owl:versionInfo "1.0.0-alpha1" ;
-                                        skos:hiddenLabel "NanoInd" ;
-                                        <http://xmlns.com/foaf/0.1/homepage> <https://github.com/emmo-repo/domain-nanoindentation> ;
-                                        <http://xmlns.com/foaf/0.1/page> <https://github.com/emmo-repo/domain-nanoindentation> .
+                                                owl:backwardCompatibleWith "" ;
+                                                owl:priorVersion "" ;
+                                                owl:versionInfo "1.0.0-alpha1" ;
+                                                skos:hiddenLabel "NanoInd" ;
+                                                <http://xmlns.com/foaf/0.1/homepage> <https://github.com/emmo-repo/domain-nanoindentation> ;
+                                                <http://xmlns.com/foaf/0.1/page> <https://github.com/emmo-repo/domain-nanoindentation> .
 
 #################################################################
 #    Annotation properties
@@ -130,11 +130,7 @@
 #    Classes
 #################################################################
 
-###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#CalibrationMeasurement
-chameo:CalibrationMeasurement rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_01338ee7-7c76-4ace-aaf4-fbf001d0dee6
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_01338ee7-7c76-4ace-aaf4-fbf001d0dee6
 :EMMO_01338ee7-7c76-4ace-aaf4-fbf001d0dee6 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:SecondaryData ;
                                            rdfs:label "PhaseAnalysisData"@en ;
@@ -143,7 +139,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "The grouping of the hardness data distribution that is produced after using gaussian probability distribution function fitting to the number of the density plot peaks of hardness, resulting in different average hardness for each group of data, which is used to annotate the corresponding mechanical phase in accordance with literature and with the scientific background."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_03b8d505-34b6-49e4-8562-f303b1d4315a
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_03b8d505-34b6-49e4-8562-f303b1d4315a
 :EMMO_03b8d505-34b6-49e4-8562-f303b1d4315a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_e78d6d05-c2d4-48a5-be30-e2a9df3d7852 ,
                                                            [ rdf:type owl:Restriction ;
@@ -161,7 +157,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The contact area in nanoindentation is estimated by an equation compared to microindentation where the contact imprint of the indentation is directly measured by microscopy."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_0429e42f-5bf5-472b-b3f9-479229eaeb1c
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_0429e42f-5bf5-472b-b3f9-479229eaeb1c
 :EMMO_0429e42f-5bf5-472b-b3f9-479229eaeb1c rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:PrimaryData ;
                                            rdfs:label "CoordinatesOffset"@en ;
@@ -170,7 +166,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "The coordinates offset is measured as output of performing tip to optics calibration."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_043dcb51-4fb1-4f29-882d-5f62ef9c7148
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_043dcb51-4fb1-4f29-882d-5f62ef9c7148
 :EMMO_043dcb51-4fb1-4f29-882d-5f62ef9c7148 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_0f87af24-8fea-5c31-8442-35559ce9f1da ;
                                            rdfs:label "Xposition"@en ;
@@ -178,7 +174,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "X position indicates the coordinates across x axis in the nanoindentation chamber, which are amongst the region of interest that nanoindentation test will be conducted."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_0553f023-b64a-5113-a3f4-487cb04554b6
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_0553f023-b64a-5113-a3f4-487cb04554b6
 :EMMO_0553f023-b64a-5113-a3f4-487cb04554b6 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationProperty ,
                                                            :EMMO_130d4ec1-18f5-5752-80e8-6a0ad583e5ff ;
@@ -187,14 +183,14 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "The frame stiffness of a nanoindenter is typically in the range of 1-10 N/m, depending on the specific design and materials used."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_0554da63-0423-5ca5-a176-9dd07ef32fb8
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_0554da63-0423-5ca5-a176-9dd07ef32fb8
 :EMMO_0554da63-0423-5ca5-a176-9dd07ef32fb8 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_9cd8f505-aad8-5554-a143-fdf7507ec7ec ;
                                            skos:prefLabel "MeasurementTime"@en ;
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The total time for a measurement to start and finish."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_065be06c-fb2d-48cc-a488-b7cd4c621580
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_065be06c-fb2d-48cc-a488-b7cd4c621580
 :EMMO_065be06c-fb2d-48cc-a488-b7cd4c621580 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_8563a29b-e1d0-48d5-9875-826519c5596a ;
                                            rdfs:label "NanoindentationPhaseMap"@en ;
@@ -202,7 +198,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A contour plot that depicts the phase change with coordinates of testing (x,y) in 2D or 3D if depth parameter is included, and a colour gradient is used to indicate each phase."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_09591a7a-39f9-550f-8b87-77bb34f4fb2f
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_09591a7a-39f9-550f-8b87-77bb34f4fb2f
 :EMMO_09591a7a-39f9-550f-8b87-77bb34f4fb2f rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationMeasurementInstrument ,
                                                            [ rdf:type owl:Restriction ;
@@ -215,7 +211,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A nanoindenter is typically used to quantify the nanomechanical characterisation properties, which refer to the range of 0-200 nm of depth according to the ISO 14577-1:2015."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_097d8202-eb97-445b-844d-54cd655a2c87
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_097d8202-eb97-445b-844d-54cd655a2c87
 :EMMO_097d8202-eb97-445b-844d-54cd655a2c87 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_84470b1f-4d4a-46c8-931a-0a8627a4b997 ;
                                            rdfs:label "NanoindentationPhaseShift"@en ;
@@ -223,7 +219,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The nanoindentation phase shift is used to indicate in continuous stiffness measurement the phase of the wave introduced due to the frequency of the measurement."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_0efb361c-cca2-4b31-8696-b6cdbdc1730b
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_0efb361c-cca2-4b31-8696-b6cdbdc1730b
 :EMMO_0efb361c-cca2-4b31-8696-b6cdbdc1730b rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_01338ee7-7c76-4ace-aaf4-fbf001d0dee6 ;
                                            rdfs:label "NumberofPhases"@en ;
@@ -232,7 +228,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "The number of groups of characterisation property data, which came up from the density plot number peaks of the specific characterisation property (i.e. hardness) or derived by a data-driven criterion that utilises one or more characterisation properties data (i.e. The elbow method used prior to k-means clustering)."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_0f83ef8d-abaf-4e8d-a449-67d36cb29a23
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_0f83ef8d-abaf-4e8d-a449-67d36cb29a23
 :EMMO_0f83ef8d-abaf-4e8d-a449-67d36cb29a23 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4977ec05-3708-4e29-8d05-7a11742a2dca ;
                                            rdfs:label "FrequencyParameters"@en ;
@@ -240,7 +236,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the frequency, the amplitude of the wave if it is displacement controlled or the magnitude of the wave if it is force controlled."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_0f87af24-8fea-5c31-8442-35559ce9f1da
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_0f87af24-8fea-5c31-8442-35559ce9f1da
 :EMMO_0f87af24-8fea-5c31-8442-35559ce9f1da rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4977ec05-3708-4e29-8d05-7a11742a2dca ,
                                                            :EMMO_84470b1f-4d4a-46c8-931a-0a8627a4b997 ;
@@ -249,13 +245,13 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The coordinates relevant to the sample, where the test of nanoindentation is being conducted."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_126fef72-87ce-4b4f-8516-6b3513366b58
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_126fef72-87ce-4b4f-8516-6b3513366b58
 :EMMO_126fef72-87ce-4b4f-8516-6b3513366b58 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_ea7f0dd1-87af-5147-a9b9-b085e22a2e06 ;
                                            skos:prefLabel "Tip"@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_130d4ec1-18f5-5752-80e8-6a0ad583e5ff
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_130d4ec1-18f5-5752-80e8-6a0ad583e5ff
 :EMMO_130d4ec1-18f5-5752-80e8-6a0ad583e5ff rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_e033b8bc-aec3-508a-bf64-77a93e72df1f ;
                                            rdfs:label "OliverPharrModelFittedData"@en ;
@@ -263,7 +259,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Model fitted data correspond to the secondary data created using the Oliver-Pharr contact mechanics model to extract information from the nanoindenter produced raw data."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_1a97a2c9-10ad-5e15-be10-fa5eabb6d542
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_1a97a2c9-10ad-5e15-be10-fa5eabb6d542
 :EMMO_1a97a2c9-10ad-5e15-be10-fa5eabb6d542 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_fd9e155e-c995-5237-b930-02ad04c0208f ;
                                            skos:prefLabel "HertzModel"@en ;
@@ -271,7 +267,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The Hertz contact model produces both normal and shear forces based on the theoretical analysis of the deformation of smooth, elastic spheres in frictional contact. Viscous dashpots may be added for further energy dissipation in simulations involving impact. Both components transmit only a force."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_1b476e51-bdc7-4ea9-b0e0-d719fbecbe16
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_1b476e51-bdc7-4ea9-b0e0-d719fbecbe16
 :EMMO_1b476e51-bdc7-4ea9-b0e0-d719fbecbe16 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_aa90561a-0d28-4381-824a-7c827c627e56 ;
                                            rdfs:label "NumberofNanoindents"@en ;
@@ -279,7 +275,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the integer number that indicates the exact number of nanoindentation events that will occur in a specified region of interest within a single nanoindentation measurement."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_1e60509e-ad49-581b-8b8c-d20be3cac4b0
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_1e60509e-ad49-581b-8b8c-d20be3cac4b0
 :EMMO_1e60509e-ad49-581b-8b8c-d20be3cac4b0 rdf:type owl:Class ;
                                            rdfs:subClassOf :TipMovementParameter ;
                                            skos:prefLabel "TipMoveBack"@en ;
@@ -287,7 +283,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Typically and empirically the move back value minimum possible threshold that a user could use is ten times smaller than the interindent spacing, however most of times the value is set to a higher number because the samples are not always perfectly flat or might be tilted, which can set up a risk of the indenter tip crushing on the sample surface while moving into the nanoindenter chamber between the current and the next nanoindent location (which has distance the interindent distance) within a single nanoindentation measurement."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_262183bd-c73d-4fda-99b7-8b6753176f1d
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_262183bd-c73d-4fda-99b7-8b6753176f1d
 :EMMO_262183bd-c73d-4fda-99b7-8b6753176f1d rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_0f83ef8d-abaf-4e8d-a449-67d36cb29a23 ;
                                            rdfs:label "Amplitude"@en ;
@@ -295,14 +291,14 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The height of the continuous stiffness nanoindentation measurement frequency, which corresponds to the maximum displacement or distance moved by a point on a vibrating body or wave measured from its equilibrium position. This is usually used as the region where the nanomechanical properties are extracted in continuous stiffness measurement mode."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_2698edca-874c-5026-b61b-e7112014fdd1
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_2698edca-874c-5026-b61b-e7112014fdd1
 :EMMO_2698edca-874c-5026-b61b-e7112014fdd1 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_a518471c-b749-5c03-bc7e-04f2aba1906e ;
                                            skos:prefLabel "Berkovich"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The Berkovich indenter tip is the most frequently used indenter tip for instrumented indentation testing (IIT) to measure mechanical properties on the nanoscale. The Berkovich indenter tip is a three-sided pyramid that can be ground to a point and thus maintains a self-similar geometry to very small scales."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_29cf0bee-8144-416e-9a46-02b5c8d9ad5e
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_29cf0bee-8144-416e-9a46-02b5c8d9ad5e
 :EMMO_29cf0bee-8144-416e-9a46-02b5c8d9ad5e rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4696f5a6-3989-4d9a-8d82-bac70344663b ;
                                            rdfs:label "ZeroContactPoint"@en ;
@@ -310,15 +306,15 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the vertical drift in the z axis of the indenter head during its penetration into a sample, introduced due to the false estimation of the initial point of contact, which is pronounced especially when testing materials using a high strain rate, where a forward motion can be introduced, thus starting the measurement when the tip is already in contact with the sample in a couple of nanometers depth."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_2cc73574-eace-5e36-afb7-70a7cd61b217
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_2cc73574-eace-5e36-afb7-70a7cd61b217
 :EMMO_2cc73574-eace-5e36-afb7-70a7cd61b217 rdf:type owl:Class ;
-                                           rdfs:subClassOf chameo:CalibrationMeasurement ;
+                                           rdfs:subClassOf :EMMO_b7264717-216e-46c6-9bf1-b17009a358c2 ;
                                            rdfs:label "MicroscopeToIndenterCalibration" ;
                                            skos:prefLabel "MicroscopeToIndenterCalibration"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The procedure where the offset between the microscope site and indentation site is calculated and corrected."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_2ccd4e0f-c57b-5a9e-94c5-41c2be5f77d8
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_2ccd4e0f-c57b-5a9e-94c5-41c2be5f77d8
 :EMMO_2ccd4e0f-c57b-5a9e-94c5-41c2be5f77d8 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_ea7f0dd1-87af-5147-a9b9-b085e22a2e06 ;
                                            rdfs:label "NanoindenterExtensionModules"@en ;
@@ -327,7 +323,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Nanoindenter extension modules are options that can be added to accommodate a variety of applications. The capabilities of the nanoindenter can be extended to facilitate application specific requirement."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_2f98bc65-69d1-52bc-8d9b-19766a69f0c3
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_2f98bc65-69d1-52bc-8d9b-19766a69f0c3
 :EMMO_2f98bc65-69d1-52bc-8d9b-19766a69f0c3 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4ab8c0cf-18aa-4e4f-9f13-8a072bd7cbd3 ,
                                                            :EMMO_cccafce4-fffe-55d6-bac4-8e4a4bdb48ce ;
@@ -335,7 +331,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Thermal drift correction is employed in nanoindentation continuous raw data of time, displacement and load, corresponding to a stable loading sequence either in the beginning or in the end of the measurement used to measure thermal drift. The displacement change per second is measured during a constant load sequence, which corresponds to the measurement of the total displacement in the specified range of nanoindentation data, devided by the total time of the specific sequence of the routine."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_2fe978b2-0d14-4070-bbc9-aefe6f4d9b6f
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_2fe978b2-0d14-4070-bbc9-aefe6f4d9b6f
 :EMMO_2fe978b2-0d14-4070-bbc9-aefe6f4d9b6f rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_6e3f1c2d-e82d-4fc4-a3e7-1de969667f81 ;
                                            rdfs:label "TipApproachRate"@en ;
@@ -343,7 +339,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the velocity of the indenter head movement while approaching the sample before contact."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_3083dcb1-3299-4c1f-8636-e02e7bcdc496
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_3083dcb1-3299-4c1f-8636-e02e7bcdc496
 :EMMO_3083dcb1-3299-4c1f-8636-e02e7bcdc496 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_42f304bf-b2c6-4188-a189-a702fc2b851a ;
                                            rdfs:label "ForceActuator"@en ;
@@ -351,9 +347,9 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The force actuator is designed to apply a force over-time on a sample. Many variants can be defined depending on way the force is applied (tensile/compressive uniaxial tests, bending test, indentation test) and its variation with time (static tests, dynamic/cyclic tests, impact tests, etc…)."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_32e4a855-39b5-5a27-9163-9175dd9dd1c9
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_32e4a855-39b5-5a27-9163-9175dd9dd1c9
 :EMMO_32e4a855-39b5-5a27-9163-9175dd9dd1c9 rdf:type owl:Class ;
-                                           rdfs:subClassOf chameo:CalibrationMeasurement ,
+                                           rdfs:subClassOf :EMMO_b7264717-216e-46c6-9bf1-b17009a358c2 ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
                                                              owl:someValuesFrom chameo:ReferenceSample
@@ -372,7 +368,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The function that describes the real geometry of the tip, and more specifically the tip's area, is called Tip Area Function. In order for the nanomechanical properties to be calculated correctly, a calibration in order to obtain the Tip-Area-Function must be contacted prior to every set of measurements."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_33020a2d-af0b-40b0-9171-4e2ae4651874
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_33020a2d-af0b-40b0-9171-4e2ae4651874
 :EMMO_33020a2d-af0b-40b0-9171-4e2ae4651874 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4977ec05-3708-4e29-8d05-7a11742a2dca ;
                                            rdfs:label "DataAcquisitionRate"@en ;
@@ -381,7 +377,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "When the DataAcquisitionRate is equal to 100Hz, then 100 data points are recorded per second of measurement; if the measurement time for performing one nanoindentation lasts 10 seconds, this means that 1000 data points are recorded for each indentation point."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_3365c29d-86c4-404e-b571-afe0155eaf7b
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_3365c29d-86c4-404e-b571-afe0155eaf7b
 :EMMO_3365c29d-86c4-404e-b571-afe0155eaf7b rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_8563a29b-e1d0-48d5-9875-826519c5596a ;
                                            rdfs:label "NanoindentationHardnessMap"@en ;
@@ -389,14 +385,14 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A contour plot that depicts the Hardness change with coordinates of testing (x,y) in 2D or 3D if depth parameter is included, and a colour gradient is used to indicate the relative variation of hardness."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_376c214e-95d7-58c9-b25a-9e95d89e85ea
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_376c214e-95d7-58c9-b25a-9e95d89e85ea
 :EMMO_376c214e-95d7-58c9-b25a-9e95d89e85ea rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_84470b1f-4d4a-46c8-931a-0a8627a4b997 ;
                                            skos:prefLabel "NanoindentationTime"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The duration for which the load is being applied to the sample, during the loading, unloading and stall phases."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_38023a7d-a9a0-5925-ac07-3803e5b029ad
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_38023a7d-a9a0-5925-ac07-3803e5b029ad
 :EMMO_38023a7d-a9a0-5925-ac07-3803e5b029ad rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationProperty ,
                                                            :EMMO_130d4ec1-18f5-5752-80e8-6a0ad583e5ff ;
@@ -406,7 +402,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The indentation hardness is calculated by examining a material's surface, which is being indented until an imprint is formed."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_3b2fb3fa-f67f-57a5-8fc9-3dcfccf3cdfa
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_3b2fb3fa-f67f-57a5-8fc9-3dcfccf3cdfa
 :EMMO_3b2fb3fa-f67f-57a5-8fc9-3dcfccf3cdfa rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_5399516a-f2ef-525e-92d9-eee82051ec8a ,
                                                            [ rdf:type owl:Restriction ;
@@ -418,7 +414,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The user sets the desired maximum displacement where the indenter penetrates the sample, which is used as stop condition."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_3d361cf2-086a-4fef-8360-5544a44f7482
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_3d361cf2-086a-4fef-8360-5544a44f7482
 :EMMO_3d361cf2-086a-4fef-8360-5544a44f7482 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_01338ee7-7c76-4ace-aaf4-fbf001d0dee6 ;
                                            rdfs:label "Phase"@en ;
@@ -427,7 +423,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Martensite, ferrite, bainite, derived by grouping the data of characterisation properties in steels."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_3ecbcfdc-20c5-5763-8db0-508aacbabe84
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_3ecbcfdc-20c5-5763-8db0-508aacbabe84
 :EMMO_3ecbcfdc-20c5-5763-8db0-508aacbabe84 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_fd9e155e-c995-5237-b930-02ad04c0208f ;
                                            skos:prefLabel "LoubetModel"@en ;
@@ -435,7 +431,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A new technique to determine the true projected contact area by nanoindentation, which requires combining two models used normally to determine the representative stress and strain from nanoindentation parameters. Consequently, it does not require any model classically used to calculate the projected contact area. The method requires performing indentation on the same sample with two indenter tips with different geometries."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_3fb11ea0-8fb8-4c70-b8ec-d4e6058ae318
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_3fb11ea0-8fb8-4c70-b8ec-d4e6058ae318
 :EMMO_3fb11ea0-8fb8-4c70-b8ec-d4e6058ae318 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CalibrationData ;
                                            rdfs:label "ComplianceCalibrationData"@en ;
@@ -445,13 +441,13 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Intepretation of ComplianceCalibrationData into the indenter software environment to save the expected deformation of the indenter head springs during testing to correct any overestimation of the nanoindentation depth after exhaustive use of the indenter (normally compliance calibration is performed once every 1 or 2 years)."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_42f304bf-b2c6-4188-a189-a702fc2b851a
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_42f304bf-b2c6-4188-a189-a702fc2b851a
 :EMMO_42f304bf-b2c6-4188-a189-a702fc2b851a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_ea7f0dd1-87af-5147-a9b9-b085e22a2e06 ;
                                            skos:prefLabel "Actuator" .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_4455172b-a665-4911-9118-ae2fa9c96dbd
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_4455172b-a665-4911-9118-ae2fa9c96dbd
 :EMMO_4455172b-a665-4911-9118-ae2fa9c96dbd rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_0429e42f-5bf5-472b-b3f9-479229eaeb1c ;
                                            rdfs:label "XOffset"@en ;
@@ -459,7 +455,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the lateral drift in the x axis of the indenter head during its movement inside the nanoindentation chamber, introduced due to the electronics heating during operation, especially when travelling large distances."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_4468c934-446c-4843-8f26-0044a31585aa
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_4468c934-446c-4843-8f26-0044a31585aa
 :EMMO_4468c934-446c-4843-8f26-0044a31585aa rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_0f83ef8d-abaf-4e8d-a449-67d36cb29a23 ;
                                            rdfs:label "Frequency"@en ;
@@ -469,7 +465,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "The Frequency that is applied during nanoindentation in continuous stiffness measurement mode to acquire the continuous change of indentation modulus, hardness, stiffness, etc. across depth."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_46846950-cb47-4097-b1e4-c1309f85c78a
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_46846950-cb47-4097-b1e4-c1309f85c78a
 :EMMO_46846950-cb47-4097-b1e4-c1309f85c78a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_01338ee7-7c76-4ace-aaf4-fbf001d0dee6 ;
                                            rdfs:label "PhaseRatio"@en ;
@@ -477,7 +473,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The percentage of a specific group of characterisation properties data, which relates the population of the specific group of data to the overall population of data generated by nanoindentation in the specified region of interest which was tested."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_4696f5a6-3989-4d9a-8d82-bac70344663b
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_4696f5a6-3989-4d9a-8d82-bac70344663b
 :EMMO_4696f5a6-3989-4d9a-8d82-bac70344663b rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:PrimaryData ;
                                            rdfs:label "DisplacementOffset"@en ;
@@ -485,7 +481,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the vertical drift in the z axis of the indenter head during its penetration into a sample, introduced due to the deformation of the indenter head springs, thermal drift or due to the false estimation of the zero contact point."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_47b2aab3-fc93-547a-9418-535a806f2e8a
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_47b2aab3-fc93-547a-9418-535a806f2e8a
 :EMMO_47b2aab3-fc93-547a-9418-535a806f2e8a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_ea7f0dd1-87af-5147-a9b9-b085e22a2e06 ;
                                            rdfs:label "AntiVibrationTable"@en ;
@@ -494,7 +490,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Anti-Vibration Table (AVT) is used to drop unwanted vibrations that delimit high-magnification/-resolution during characterization. "@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_4977ec05-3708-4e29-8d05-7a11742a2dca
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_4977ec05-3708-4e29-8d05-7a11742a2dca
 :EMMO_4977ec05-3708-4e29-8d05-7a11742a2dca rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:MeasurementParameter ;
                                            rdfs:label "NanoindentationControlParameter"@en ;
@@ -504,7 +500,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "The parameters that are determined by the user using the nanoindenter software to set-up the nanoindentation calibration/test measurement protocol."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_4ab8c0cf-18aa-4e4f-9f13-8a072bd7cbd3
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_4ab8c0cf-18aa-4e4f-9f13-8a072bd7cbd3
 :EMMO_4ab8c0cf-18aa-4e4f-9f13-8a072bd7cbd3 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:DataPreparation ;
                                            rdfs:label "NanoindentationCorrectionRoutine"@en ;
@@ -512,7 +508,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to fitting routines applied to the nanoindentation raw data, which is used then to correct the offset of the measurement parameters; correction of depth due to thermal drift, correction of the depth by identifying the actual zero contact point between the tip and the sample surface by using nanoindentation data."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_523303f9-ceb8-5145-adc5-b6acb5d309fa
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_523303f9-ceb8-5145-adc5-b6acb5d309fa
 :EMMO_523303f9-ceb8-5145-adc5-b6acb5d309fa rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:Probe ,
                                                            [ rdf:type owl:Restriction ;
@@ -529,14 +525,14 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Indenter head is the component that is consisted by a frame with specific stiffness specifications, where the indentation tip is attached."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_5399516a-f2ef-525e-92d9-eee82051ec8a
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_5399516a-f2ef-525e-92d9-eee82051ec8a
 :EMMO_5399516a-f2ef-525e-92d9-eee82051ec8a rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:MeasurementParameter ;
                                            skos:prefLabel "NanoindentationProtocolMode"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the property which is tuned in the nanoindentation protocol to control the measurement, typically load, displacement, or strain rate."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_54e5aeed-a5a2-4a43-8c81-f4b70fa7ff6b
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_54e5aeed-a5a2-4a43-8c81-f4b70fa7ff6b
 :EMMO_54e5aeed-a5a2-4a43-8c81-f4b70fa7ff6b rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_ac43b918-1cf3-4f5e-9ef8-7a2c824de9d6 ;
                                            rdfs:label "SensitivityAnalysisFilteredData"@en ;
@@ -544,7 +540,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Sensitivity analysis is used to filter the data descriptors/parameters/characterisation properties that present strong dependence/correlation to each other, i.e. the one parameter is the product of another using a relation. The independent parameters are filtered to be used in subsequent analysis, i.e. phase identification."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_55fdd3e9-bd5d-5fe9-93fe-ce4f22eafcea
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_55fdd3e9-bd5d-5fe9-93fe-ce4f22eafcea
 :EMMO_55fdd3e9-bd5d-5fe9-93fe-ce4f22eafcea rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_fd9e155e-c995-5237-b930-02ad04c0208f ;
                                            skos:prefLabel "OliverPharrModel"@en ;
@@ -552,7 +548,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The Oliver–Pharr method was originally developed to measure the hardness and elastic modulus of a single phase elasto-plastic material from the indentation load–depth curve with sharp indenters, such as a pyramidal Berkovich tip."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_5814dcc4-d0b9-5cdf-ab0e-785773930dba
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_5814dcc4-d0b9-5cdf-ab0e-785773930dba
 :EMMO_5814dcc4-d0b9-5cdf-ab0e-785773930dba rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationProperty ,
                                                            :EMMO_130d4ec1-18f5-5752-80e8-6a0ad583e5ff ;
@@ -561,7 +557,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "The elastic modulus of aluminum measured by nanoindentation is approximately 70-80 GPa. This value is relatively low compared to other metals, indicating that aluminum has a relatively low stiffness and resistance to deformation."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_59b43cc8-77a1-4b1e-97eb-b586188616cb
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_59b43cc8-77a1-4b1e-97eb-b586188616cb
 :EMMO_59b43cc8-77a1-4b1e-97eb-b586188616cb rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_0429e42f-5bf5-472b-b3f9-479229eaeb1c ;
                                            rdfs:label "YOffset"@en ;
@@ -569,7 +565,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the lateral drift in the y axis of the indenter head during its movement inside the nanoindentation chamber, introduced due to the electronics heating during operation, especially when travelling large distances."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_5a0e2d14-1712-419e-85e2-95146e489b98
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_5a0e2d14-1712-419e-85e2-95146e489b98
 :EMMO_5a0e2d14-1712-419e-85e2-95146e489b98 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4977ec05-3708-4e29-8d05-7a11742a2dca ;
                                            rdfs:label "TargetDisplacement"@en ;
@@ -580,7 +576,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The maximum depth the user sets the indenter to penetrate into the sample, which is used as a stop condition during a displacement controlled measurement."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_5ca6e1c1-93e9-5e1a-881b-2c2bd38074b1
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_5ca6e1c1-93e9-5e1a-881b-2c2bd38074b1
 :EMMO_5ca6e1c1-93e9-5e1a-881b-2c2bd38074b1 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_b3111cf6-107c-4aa6-8f3c-936348906200 ,
                                                            [ rdf:type owl:Restriction ;
@@ -596,7 +592,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The continuous stiffness measurement (CSM) method is a nanoindentation technique for obtaining elastic modulus and hardness data continuously during a nanoindentation process, and as such the measurement allows for the calculation of depth-dependent properties of a material in a single step."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_5ea270f0-5b79-544b-ad00-dc3737033d75
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_5ea270f0-5b79-544b-ad00-dc3737033d75
 :EMMO_5ea270f0-5b79-544b-ad00-dc3737033d75 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_cccafce4-fffe-55d6-bac4-8e4a4bdb48ce ;
                                            rdfs:label "PolynomialRegression"@en ;
@@ -605,7 +601,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Although polynomial regression fits a nonlinear model to the data, as a statistical estimation problem it is linear."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_679dff53-b148-4ffa-a60c-5c9e10edee12
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_679dff53-b148-4ffa-a60c-5c9e10edee12
 :EMMO_679dff53-b148-4ffa-a60c-5c9e10edee12 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4977ec05-3708-4e29-8d05-7a11742a2dca ;
                                            rdfs:label "TriggerForce"@en ;
@@ -614,7 +610,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "When the trigger force it is exceeded and a displacement controlled protocols is selected with specific target depth, then after that trigger force the indenter will start to count the displacement for reaching the target depth threshold and stop the measurement. In case the trigger force is relatively high, then the indentation tip will already have penetrated the sample surface in a couple of nanometers, thus technically the final nanoindentation depth will exceed the threshold of target depth control parameter."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_69c892cc-b9c4-53cd-8e5e-216c57e2592f
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_69c892cc-b9c4-53cd-8e5e-216c57e2592f
 :EMMO_69c892cc-b9c4-53cd-8e5e-216c57e2592f rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_ea7f0dd1-87af-5147-a9b9-b085e22a2e06 ;
                                            rdfs:label "SampleHolder"@en ;
@@ -623,7 +619,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The sample holder (known also as flat specimen holder) is used for holding flat, circular or square/rectangular samples. It enables tightening the sample from the front and from the back."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_6e3f1c2d-e82d-4fc4-a3e7-1de969667f81
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_6e3f1c2d-e82d-4fc4-a3e7-1de969667f81
 :EMMO_6e3f1c2d-e82d-4fc4-a3e7-1de969667f81 rdf:type owl:Class ;
                                            rdfs:subClassOf :TipMovementParameter ;
                                            rdfs:label "TipMovementRate"@en ;
@@ -631,14 +627,14 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It is the rate of the vertical movement of an indenter head, and correspondingly, tip."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_7417ea84-ca1c-5ef3-821c-0007b220ecba
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_7417ea84-ca1c-5ef3-821c-0007b220ecba
 :EMMO_7417ea84-ca1c-5ef3-821c-0007b220ecba rdf:type owl:Class ;
                                            rdfs:subClassOf :TipMovementParameter ;
                                            skos:prefLabel "TargetUnloadTime"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The duration of the unloading phase of the measurement."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_755dd2db-9d48-42b9-8f68-fffe55cb6edb
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_755dd2db-9d48-42b9-8f68-fffe55cb6edb
 :EMMO_755dd2db-9d48-42b9-8f68-fffe55cb6edb rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:PostProcessingModel ,
                                                            [ rdf:type owl:Restriction ;
@@ -651,7 +647,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "In nanoindentation machine learning is used to predict the phases in a sample that is tested by nanoindentation using previous knowledge from datasets with phase annotations or by clustering data into groups, which are identified in accordance to the scientific background."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_78896e20-1c4f-4bfd-8e57-85a1def4d05a
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_78896e20-1c4f-4bfd-8e57-85a1def4d05a
 :EMMO_78896e20-1c4f-4bfd-8e57-85a1def4d05a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_0f87af24-8fea-5c31-8442-35559ce9f1da ;
                                            rdfs:label "Yposition"@en ;
@@ -659,14 +655,14 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Y position indicates the coordinates across y axis in the nanoindentation champer, which are amongst the region of interest that nanoindentation test will be conducted."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_7fbd8a15-7c9d-5c36-a9a6-68291d90d144
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_7fbd8a15-7c9d-5c36-a9a6-68291d90d144
 :EMMO_7fbd8a15-7c9d-5c36-a9a6-68291d90d144 rdf:type owl:Class ;
                                            rdfs:subClassOf :TipMovementParameter ;
                                            skos:prefLabel "TargetLoadingTimeOnSample"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The duration the selected load is being applied to the sample."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_84470b1f-4d4a-46c8-931a-0a8627a4b997
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_84470b1f-4d4a-46c8-931a-0a8627a4b997
 :EMMO_84470b1f-4d4a-46c8-931a-0a8627a4b997 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:RawData ;
                                            rdfs:label "NanoindentationRecordedParameters"@en ;
@@ -675,7 +671,7 @@ chameo:CalibrationMeasurement rdf:type owl:Class .
 raw data is a set of (unprocessed) data that is given directly as output from the controller."""@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_84bb72c3-17ca-41b6-afd5-4a1cabd17ba2
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_84bb72c3-17ca-41b6-afd5-4a1cabd17ba2
 :EMMO_84bb72c3-17ca-41b6-afd5-4a1cabd17ba2 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_6e3f1c2d-e82d-4fc4-a3e7-1de969667f81 ;
                                            rdfs:label "TipUnloadRate"@en ;
@@ -683,7 +679,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the rate of the indenter head movement velocity while retracting from the sample, after the measurement stop condition is triggerred."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_8563a29b-e1d0-48d5-9875-826519c5596a
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_8563a29b-e1d0-48d5-9875-826519c5596a
 :EMMO_8563a29b-e1d0-48d5-9875-826519c5596a rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:SecondaryData ;
                                            rdfs:label "NanoindentationPlot"@en ;
@@ -692,7 +688,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "A plot that depicts the hardness change with the nanoindentation contact depth."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_86b9592f-d4fe-484e-8cf3-d51d91aed6d5
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_86b9592f-d4fe-484e-8cf3-d51d91aed6d5
 :EMMO_86b9592f-d4fe-484e-8cf3-d51d91aed6d5 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_6e3f1c2d-e82d-4fc4-a3e7-1de969667f81 ;
                                            rdfs:label "TipStrainRate"@en ;
@@ -700,9 +696,9 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The rate that controls the change in strain (deformation) of a material with respect to time."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_8989ae5d-162d-54bc-ab2a-b2353d2f5d9b
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_8989ae5d-162d-54bc-ab2a-b2353d2f5d9b
 :EMMO_8989ae5d-162d-54bc-ab2a-b2353d2f5d9b rdf:type owl:Class ;
-                                           rdfs:subClassOf chameo:CalibrationMeasurement ,
+                                           rdfs:subClassOf :EMMO_b7264717-216e-46c6-9bf1-b17009a358c2 ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
                                                              owl:someValuesFrom chameo:ReferenceSample
@@ -716,7 +712,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the calibration at maximum force, which aims to correct the displacement measurement, calculating the displacement of the springs during force application of force on materials surface, due to reaction forces." .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_8b35a71c-caf2-49c5-bfcc-18bb33f1a4e0
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_8b35a71c-caf2-49c5-bfcc-18bb33f1a4e0
 :EMMO_8b35a71c-caf2-49c5-bfcc-18bb33f1a4e0 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_5ea270f0-5b79-544b-ad00-dc3737033d75 ,
                                                            [ rdf:type owl:Restriction ;
@@ -732,14 +728,14 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "TipAreaFunction is the relation that is exported by polynomial fitting the nanoindentation data of contact depth and contact area from the calibration experiment using a reference sample. This relation calculates the contact area of non reference samples tested using as input the nanoindentation contact depth."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_8b42952e-33f9-548c-a75a-d303f41dd39c
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_8b42952e-33f9-548c-a75a-d303f41dd39c
 :EMMO_8b42952e-33f9-548c-a75a-d303f41dd39c rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_a518471c-b749-5c03-bc7e-04f2aba1906e ;
                                            skos:prefLabel "CubeCorner"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The Cube-Corner indenter tip is a three- sided pyramid with mutually perpendicular faces arranged in a geometry like the corner of a cube. "@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_902d4c9c-0d45-523c-a4cb-801d0393bf59
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_902d4c9c-0d45-523c-a4cb-801d0393bf59
 :EMMO_902d4c9c-0d45-523c-a4cb-801d0393bf59 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_ce17bcb5-e666-51b8-ae5c-d3b61086bad0 ;
                                            rdfs:label "TipTemperatureRange"@en ;
@@ -747,7 +743,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Tip temperature range corresponds to the temperature range which the tip can sustain without degrading, considering zero or non-zero force scenarios."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_93cc4b17-9a8e-54e2-87eb-7853c7be60f8
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_93cc4b17-9a8e-54e2-87eb-7853c7be60f8
 :EMMO_93cc4b17-9a8e-54e2-87eb-7853c7be60f8 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_5399516a-f2ef-525e-92d9-eee82051ec8a ,
                                                            [ rdf:type owl:Restriction ;
@@ -759,35 +755,35 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The user sets the desired strain rate to be applied to the sample."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_9400e26c-e8d7-4fe5-a75f-1ed8196c9268
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_9400e26c-e8d7-4fe5-a75f-1ed8196c9268
 :EMMO_9400e26c-e8d7-4fe5-a75f-1ed8196c9268 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_b14e3441-698e-43d5-9447-2e46f1219260 ;
                                            rdfs:label "IndenterFrameStiffness"@en ;
                                            skos:prefLabel "IndenterFrameStiffness"@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_9a42c0cf-f0b5-52cd-b56d-5aa83d63688b
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_9a42c0cf-f0b5-52cd-b56d-5aa83d63688b
 :EMMO_9a42c0cf-f0b5-52cd-b56d-5aa83d63688b rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_84470b1f-4d4a-46c8-931a-0a8627a4b997 ;
                                            skos:prefLabel "NanoindentationLoad"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The load that has been applied to the sample."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_9b2d612e-8ed9-5091-aa0b-19052817e72e
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_9b2d612e-8ed9-5091-aa0b-19052817e72e
 :EMMO_9b2d612e-8ed9-5091-aa0b-19052817e72e rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationMeasurementProcess ;
                                            skos:prefLabel "ScanningProbeMicroscopyMeasurement"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Scanning probe microscopy (SPM) is a branch of microscopy that forms images of surfaces using a physical probe that scans the specimen." .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_9cd8f505-aad8-5554-a143-fdf7507ec7ec
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_9cd8f505-aad8-5554-a143-fdf7507ec7ec
 :EMMO_9cd8f505-aad8-5554-a143-fdf7507ec7ec rdf:type owl:Class ;
                                            rdfs:subClassOf :TipMovementParameter ;
                                            skos:prefLabel "NanoindentationTime"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The total duration of a nanoindentation test to be completed." .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_a2105b87-83f0-5656-a1be-992a16092741
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_a2105b87-83f0-5656-a1be-992a16092741
 :EMMO_a2105b87-83f0-5656-a1be-992a16092741 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationEnvironment ,
                                                            :EMMO_ea7f0dd1-87af-5147-a9b9-b085e22a2e06 ;
@@ -797,7 +793,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Nanoindenter chamber is a specific protected volume using structural materials to support specific temperature/humidity requirements, apply vacuum, isolate the measurement environment from the external noise. "@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_a45dfdb9-7459-4bb9-a712-8a24b85afd1d
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_a45dfdb9-7459-4bb9-a712-8a24b85afd1d
 :EMMO_a45dfdb9-7459-4bb9-a712-8a24b85afd1d rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_84470b1f-4d4a-46c8-931a-0a8627a4b997 ;
                                            rdfs:label "NanoindentationIndex"@en ;
@@ -805,7 +801,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An integer value that is used to count and indicate each of the nanoindentation event number."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_a4af3c85-56db-447e-ab7e-d2b6fb784071
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_a4af3c85-56db-447e-ab7e-d2b6fb784071
 :EMMO_a4af3c85-56db-447e-ab7e-d2b6fb784071 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_6e3f1c2d-e82d-4fc4-a3e7-1de969667f81 ;
                                            rdfs:label "TipLoadRate"@en ;
@@ -813,7 +809,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the rate of the indenter head movement while penetrating the sample (signaled by exceeding the trigger force settled for the measurement), before the control parameter of the measurement is triggered, and the measurement stops."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_a518471c-b749-5c03-bc7e-04f2aba1906e
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_a518471c-b749-5c03-bc7e-04f2aba1906e
 :EMMO_a518471c-b749-5c03-bc7e-04f2aba1906e rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_126fef72-87ce-4b4f-8516-6b3513366b58 ;
                                            rdfs:label "IndenterTip" ;
@@ -821,7 +817,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The indenter tip is a conical or spherical or conospherical shaped tip and is build using diamond or metal materials, which dependends on the application, the force/displacement requirements, and the mechanical behavior of the sample material." .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_a678c7cc-6026-46ce-b22d-73ff5d996dbd
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_a678c7cc-6026-46ce-b22d-73ff5d996dbd
 :EMMO_a678c7cc-6026-46ce-b22d-73ff5d996dbd rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_0f83ef8d-abaf-4e8d-a449-67d36cb29a23 ;
                                            rdfs:label "Magnitude"@en ;
@@ -829,7 +825,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The height of the continuous stiffness nanoindentation measurement frequency, which corresponds to the maximum force applied by a point on a vibrating body or wave measured from its equilibrium position (of each \"cycle\"). This is usually used as the region where the nanomechanical properties are extracted in continuous stiffness measurement mode."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_a69e8716-a4a6-4473-a59f-146ebd991fa6
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_a69e8716-a4a6-4473-a59f-146ebd991fa6
 :EMMO_a69e8716-a4a6-4473-a59f-146ebd991fa6 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_e78d6d05-c2d4-48a5-be30-e2a9df3d7852 ;
                                            rdfs:label "NanoindentationContactDepth"@en ;
@@ -839,7 +835,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The depth measured during the indentation (h) includes the depression of the sample around the indentation, in addition to the contact depth."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_a75177d7-80ed-4c1f-89f9-20e29cbbcb03
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_a75177d7-80ed-4c1f-89f9-20e29cbbcb03
 :EMMO_a75177d7-80ed-4c1f-89f9-20e29cbbcb03 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:PostProcessingModel ;
                                            rdfs:label "StatisticsModel"@en ;
@@ -847,7 +843,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A statistical model is a mathematical model that embodies a set of statistical assumptions concerning the generation of sample data. A statistical model represents, often in considerably idealized form, the data-generating process."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_aa90561a-0d28-4381-824a-7c827c627e56
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_aa90561a-0d28-4381-824a-7c827c627e56
 :EMMO_aa90561a-0d28-4381-824a-7c827c627e56 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4977ec05-3708-4e29-8d05-7a11742a2dca ;
                                            rdfs:label "GridDimensions"@en ;
@@ -855,14 +851,14 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the length and width of the indentation pattern, which will be localised in the sample to form and test the region of interest."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_aa9c215e-c135-2735-b932-02ad01c0208e
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_aa9c215e-c135-2735-b932-02ad01c0208e
 :EMMO_aa9c215e-c135-2735-b932-02ad01c0208e rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
                                            rdfs:label "HarmonicStiffness"@en ;
                                            skos:prefLabel "HarmonicStiffness"@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_aab92d22-65e0-4352-af99-54bab5a17e17
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_aab92d22-65e0-4352-af99-54bab5a17e17
 :EMMO_aab92d22-65e0-4352-af99-54bab5a17e17 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_755dd2db-9d48-42b9-8f68-fffe55cb6edb ;
                                            rdfs:label "ClusteringModel"@en ;
@@ -871,7 +867,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "k-mean clustering algorithm is used to model normalised data into groups using the criterion of Euclidean distance."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ac43b918-1cf3-4f5e-9ef8-7a2c824de9d6
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_ac43b918-1cf3-4f5e-9ef8-7a2c824de9d6
 :EMMO_ac43b918-1cf3-4f5e-9ef8-7a2c824de9d6 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:PrimaryData ;
                                            rdfs:label "FilteredData"@en ;
@@ -879,7 +875,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the nanoindentation raw data which were sorted using specific if/else conditions."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_aceac63c-c061-4351-b940-a08531472dda
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_aceac63c-c061-4351-b940-a08531472dda
 :EMMO_aceac63c-c061-4351-b940-a08531472dda rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_a75177d7-80ed-4c1f-89f9-20e29cbbcb03 ;
                                            rdfs:label "ProbabilityDistributionFunction"@en ;
@@ -887,21 +883,21 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "In probability theory, a probability density function, density function, or density of an absolutely continuous random variable, is a function whose value at any given sample in the sample space can be interpreted as providing a relative likelihood that the value of the random variable would be equal to that sample."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ad1e155e-c994-5237-b930-02bd04c1208f
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_ad1e155e-c994-5237-b930-02bd04c1208f
 :EMMO_ad1e155e-c994-5237-b930-02bd04c1208f rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
                                            rdfs:label "Damping"@en ;
                                            skos:prefLabel "Damping"@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_b14e3441-698e-43d5-9447-2e46f1219260
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_b14e3441-698e-43d5-9447-2e46f1219260
 :EMMO_b14e3441-698e-43d5-9447-2e46f1219260 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationHardwareSpecification ;
                                            rdfs:label "IndenterFrameProperty"@en ;
                                            skos:prefLabel "IndenterFrameProperty"@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_b22303b1-dbbe-5ce5-8c37-ef6a6c9258bc
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_b22303b1-dbbe-5ce5-8c37-ef6a6c9258bc
 :EMMO_b22303b1-dbbe-5ce5-8c37-ef6a6c9258bc rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationProperty ,
                                                            :EMMO_130d4ec1-18f5-5752-80e8-6a0ad583e5ff ;
@@ -912,7 +908,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The reduced modulus Er is related to the Young's modulus E with the simple equation E* = E/(1−v^2), where v is the sample's Poisson's ratio."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_b3111cf6-107c-4aa6-8f3c-936348906200
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_b3111cf6-107c-4aa6-8f3c-936348906200
 :EMMO_b3111cf6-107c-4aa6-8f3c-936348906200 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationMeasurementProcess ,
                                                            chameo:Nanoindentation ;
@@ -921,7 +917,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It is the procedure of testing a sample by using a tip to penetrate the surface while recording the force signal vs displacement and characterise the sample stiffness. The measurement can have zero oscilation frequency, termed quasistatic, or higher than zero, termed as continuous stiffness measurement." .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_b4937b84-bf09-5399-8781-6b6f55fa3011
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_b4937b84-bf09-5399-8781-6b6f55fa3011
 :EMMO_b4937b84-bf09-5399-8781-6b6f55fa3011 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4ab8c0cf-18aa-4e4f-9f13-8a072bd7cbd3 ,
                                                            :EMMO_cccafce4-fffe-55d6-bac4-8e4a4bdb48ce ;
@@ -929,7 +925,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Stiffness fitting is the linear regression used in quasistatic nanoindentation to extract the stiffness of the sample within the range of 98-80% of the subsequent load or displacement value in the unloading load-displacement curve."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_b5f7403b-c469-5ac2-b1bd-95742e806c70
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_b5f7403b-c469-5ac2-b1bd-95742e806c70
 :EMMO_b5f7403b-c469-5ac2-b1bd-95742e806c70 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_b3111cf6-107c-4aa6-8f3c-936348906200 ;
                                            rdfs:label "QuasistaticMeasurement" ;
@@ -937,14 +933,14 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A quasi-static nanoindentation test is performed by applying and removing a load to a sample in a highly controlled manner with a geometrically well-defined probe."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_b7264717-216e-46c6-9bf1-b17009a358c2
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_b7264717-216e-46c6-9bf1-b17009a358c2
 :EMMO_b7264717-216e-46c6-9bf1-b17009a358c2 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CalibrationProcess ;
                                            rdfs:label "NanoindentationCalibrationProcess"@en ;
                                            skos:prefLabel "NanoindentationCalibrationProcess"@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_bb9c215e-c135-2735-b932-02ee01c0208e
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_bb9c215e-c135-2735-b932-02ee01c0208e
 :EMMO_bb9c215e-c135-2735-b932-02ee01c0208e rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationHardwareSpecification ;
                                            rdfs:label "StaticProperties"@en ;
@@ -952,14 +948,14 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hardware specification during quasi-static movements."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_c5ca1331-654c-5c5f-b272-ec821e2b86b4
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_c5ca1331-654c-5c5f-b272-ec821e2b86b4
 :EMMO_c5ca1331-654c-5c5f-b272-ec821e2b86b4 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_b4937b84-bf09-5399-8781-6b6f55fa3011 ;
                                            skos:prefLabel "ZeroContactPointExtrapolation"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Zero contact point extrapolation is the linear regression fitted in continuous stiffness measurement in nanoindentation to identify the zero depth of the initiation of tip-sample contact in nanoindentation experiment at a specified critical contact force value ranges, used to calculate the intercept with the x-axis as the real zero contact point of the measurement."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_c66619a6-9ba1-499e-8ff5-96774774e574
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_c66619a6-9ba1-499e-8ff5-96774774e574
 :EMMO_c66619a6-9ba1-499e-8ff5-96774774e574 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CalibrationData ;
                                            rdfs:label "DisplacementCalibrationData"@en ;
@@ -969,7 +965,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "DisplacementCalibrationData are used to establish a polynomial regression function; the Tip Area Function. In order for the nanomechanical properties to be calculated correctly when testing a new sample, a calibration is conducted in order to obtain the Tip-Area-Function prior to every set of measurements."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_c685ca8f-d20b-5e80-886e-6dcb018bf3ff
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_c685ca8f-d20b-5e80-886e-6dcb018bf3ff
 :EMMO_c685ca8f-d20b-5e80-886e-6dcb018bf3ff rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_755dd2db-9d48-42b9-8f68-fffe55cb6edb ,
                                                            :EMMO_a75177d7-80ed-4c1f-89f9-20e29cbbcb03 ;
@@ -979,7 +975,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "In machine learning the regression can be used to model more than or just one parameter, similar to statistics, in order to establish a relation to correlate the input parameters with an output, i.e. characterisation properties with phases. The regression can give the possibility for example in metals for a phase to be martensite, which can be 20%, and compared to the other potential phase, when the algorithm is fixed to assign values < 50% to 0, then from regression the algorithm performs classification (the output is that the phase is not classifies as martensite)."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_c7e18278-0e6d-4e83-b696-ef63d3664ca9
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_c7e18278-0e6d-4e83-b696-ef63d3664ca9
 :EMMO_c7e18278-0e6d-4e83-b696-ef63d3664ca9 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CalibrationData ;
                                            rdfs:label "OffsetCalibrationData"@en ;
@@ -989,7 +985,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "The user performs some reference indents, for which the centre of the indents is used by the user as an input to the software to correct any deviations in X and Y axis and refine the (X,Y) data."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_c964dced-f886-4728-9d4b-fbf46451fde5
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_c964dced-f886-4728-9d4b-fbf46451fde5
 :EMMO_c964dced-f886-4728-9d4b-fbf46451fde5 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_8563a29b-e1d0-48d5-9875-826519c5596a ;
                                            rdfs:label "NanoindentationModulusMap"@en ;
@@ -997,7 +993,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A contour plot that depicts the indentation modulus change with coordinates of testing (x,y) in 2D or 3D if depth parameter is included, and a colour gradient is used to indicate the relative variation of indentation modulus."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ca811644-f6da-5c3a-8474-824bf0c3520f
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_ca811644-f6da-5c3a-8474-824bf0c3520f
 :EMMO_ca811644-f6da-5c3a-8474-824bf0c3520f rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:Detector ;
                                            rdfs:label "ForceDetector"@en ;
@@ -1005,14 +1001,14 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The force detector is a component which is used to identify/quantify the electric signal and converted into force data to monitor precisely the force application during nanoindentation test."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ca91a367-8ba6-5bd8-b9a8-d0735433e416
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_ca91a367-8ba6-5bd8-b9a8-d0735433e416
 :EMMO_ca91a367-8ba6-5bd8-b9a8-d0735433e416 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_84470b1f-4d4a-46c8-931a-0a8627a4b997 ;
                                            skos:prefLabel "NanoindentationVoltage"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The voltage the instrument uses during the measurement, which will later be transformed into signal for the extracted data."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_cad806c5-2465-4bfb-8c9b-d4c0cd143f6a
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_cad806c5-2465-4bfb-8c9b-d4c0cd143f6a
 :EMMO_cad806c5-2465-4bfb-8c9b-d4c0cd143f6a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4696f5a6-3989-4d9a-8d82-bac70344663b ;
                                            rdfs:label "ThermalDriftOffset"@en ;
@@ -1021,21 +1017,21 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Correction of the displacement measured during recording nanoindentation data by calculating thermal drift in nm/sec at constant force (typically 10% of the maximum applied force) for a certain time period, and substracting the mean value from the displacement data."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_cb12f672-3cfe-5714-be37-70b37202ca54
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_cb12f672-3cfe-5714-be37-70b37202ca54
 :EMMO_cb12f672-3cfe-5714-be37-70b37202ca54 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_a518471c-b749-5c03-bc7e-04f2aba1906e ;
                                            skos:prefLabel "Vickers"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The Vickers hardness test uses a 136° pyramidal diamond indenter that forms a square indent. "@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_cba58c71-5789-5709-8186-e9359692f03a
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_cba58c71-5789-5709-8186-e9359692f03a
 :EMMO_cba58c71-5789-5709-8186-e9359692f03a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_a518471c-b749-5c03-bc7e-04f2aba1906e ;
                                            skos:prefLabel "BallTip"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The ball indenter tip is typically made of a hard metal and it is of spherical shape, which facilitates to convert force-displacement data into stress-strain curves, avoiding early yielding of the material due to shape effects."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_cc9a215a-a135-2715-b932-02ee01c0208e
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_cc9a215a-a135-2715-b932-02ee01c0208e
 :EMMO_cc9a215a-a135-2715-b932-02ee01c0208e rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4977ec05-3708-4e29-8d05-7a11742a2dca ;
                                            rdfs:label "TipMovementParameter"@en ;
@@ -1043,7 +1039,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the parameters tuned using nanoindenter software that correspond to the control of the nanoindenter tip movement velocity or distance across z-axis."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_cccafce4-fffe-55d6-bac4-8e4a4bdb48ce
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_cccafce4-fffe-55d6-bac4-8e4a4bdb48ce
 :EMMO_cccafce4-fffe-55d6-bac4-8e4a4bdb48ce rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_c685ca8f-d20b-5e80-886e-6dcb018bf3ff ;
                                            rdfs:label "LinearRegression"@en ;
@@ -1051,21 +1047,21 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "In statistics, linear regression is a linear approach for modelling the relationship between a scalar response and one or more explanatory variables."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ce17bcb5-e666-51b8-ae5c-d3b61086bad0
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_ce17bcb5-e666-51b8-ae5c-d3b61086bad0
 :EMMO_ce17bcb5-e666-51b8-ae5c-d3b61086bad0 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationHardwareSpecification ;
                                            skos:prefLabel "IndenterTipSpecification"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The indenter tip specifications correspond to the requirements of the indenter tip regarding elastic modulus and hardness or (electro)chemical reactivity, which is required to avoid excessive tip wear when testing hard or corrosive materials." .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ce41e58e-87ee-55f7-86ca-3aeb97bf3f25
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_ce41e58e-87ee-55f7-86ca-3aeb97bf3f25
 :EMMO_ce41e58e-87ee-55f7-86ca-3aeb97bf3f25 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_a518471c-b749-5c03-bc7e-04f2aba1906e ;
                                            skos:prefLabel "CustomSideAngle"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Custom side-angle indenter tips are 3-sided indenters with custom angles and flat or round ends of any compatible size. "@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_d06413c3-11c5-5d8f-afc9-333ef8464a1b
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_d06413c3-11c5-5d8f-afc9-333ef8464a1b
 :EMMO_d06413c3-11c5-5d8f-afc9-333ef8464a1b rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_5399516a-f2ef-525e-92d9-eee82051ec8a ,
                                                            [ rdf:type owl:Restriction ;
@@ -1077,7 +1073,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The user sets the desired maximum load to be applied on the sample, which is the measurement stop condition."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_d497347a-f930-4942-b1b7-5e1cfe80721d
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_d497347a-f930-4942-b1b7-5e1cfe80721d
 :EMMO_d497347a-f930-4942-b1b7-5e1cfe80721d rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_aa90561a-0d28-4381-824a-7c827c627e56 ;
                                            rdfs:label "InterindentDistance"@en ;
@@ -1087,7 +1083,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Typically and empirically is set 10 time higher than the nanoindentation depth."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_d5d12433-18da-4bbb-b4ad-9b1c43b74621
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_d5d12433-18da-4bbb-b4ad-9b1c43b74621
 :EMMO_d5d12433-18da-4bbb-b4ad-9b1c43b74621 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4696f5a6-3989-4d9a-8d82-bac70344663b ;
                                            rdfs:label "ComplianceOffset"@en ;
@@ -1096,14 +1092,14 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "The displacement offset is the output of the compliance calibration, which calculates the deformation/displacement of indenter head springs during testing."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_d7a08a6e-b3cb-5d08-b67c-e7618d17ffeb
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_d7a08a6e-b3cb-5d08-b67c-e7618d17ffeb
 :EMMO_d7a08a6e-b3cb-5d08-b67c-e7618d17ffeb rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationMeasurementProcess ;
                                            skos:prefLabel "SurfaceFreeEnergyMeasurement"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Corresponds to the nanoindentation non-contact method applied to extract the surface free energy of a sample utilising the load and displacement raw data and applying a adhesion contact mechanics model to extract the secondary data of surface free energy." .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_d88f9767-a8a0-4f35-a584-3d0e1b153274
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_d88f9767-a8a0-4f35-a584-3d0e1b153274
 :EMMO_d88f9767-a8a0-4f35-a584-3d0e1b153274 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:SecondaryData ;
                                            rdfs:label "HardnessToModulusRatio"@en ;
@@ -1112,14 +1108,14 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Indentation hardness generally increases upon material dehydration, however to a larger extent than expected from accompanying changes in indentation modulus, thus a higher hardness to modulus ratio indicating that water acts as a ‘plasticiser’ in case of examining biological materials."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_d903a49f-fb02-596d-a71e-e4b4b56e8155
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_d903a49f-fb02-596d-a71e-e4b4b56e8155
 :EMMO_d903a49f-fb02-596d-a71e-e4b4b56e8155 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_9cd8f505-aad8-5554-a143-fdf7507ec7ec ;
                                            skos:prefLabel "TimeOnSample"@en ;
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The duration that the indenter tip is in contact with the sample."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_da48432d-7f82-4e50-9976-0f57dbfd6cb1
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_da48432d-7f82-4e50-9976-0f57dbfd6cb1
 :EMMO_da48432d-7f82-4e50-9976-0f57dbfd6cb1 rdf:type owl:Class ;
                                            rdfs:subClassOf :TipMovementParameter ;
                                            rdfs:label "HoldingTime"@en ;
@@ -1127,7 +1123,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It represents the time that the indenter tip remains in contact with the sample surface at a prespecified target load or depth."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_dcd0b0af-df41-478a-aa32-c380ed9a751d
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_dcd0b0af-df41-478a-aa32-c380ed9a751d
 :EMMO_dcd0b0af-df41-478a-aa32-c380ed9a751d rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_ac43b918-1cf3-4f5e-9ef8-7a2c824de9d6 ;
                                            rdfs:label "ZScoreFilteredData"@en ;
@@ -1135,7 +1131,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "When comparing the values of a nanoindentation raw data parameter with the mean value dividing the result by the standard deviation to extract the normalised value of z-score and removing data exceeding the absolute value of 3 (applies to homogeneous materials/samples)."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_dd3442d3-3dfa-4be6-be6e-68f0eaed1476
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_dd3442d3-3dfa-4be6-be6e-68f0eaed1476
 :EMMO_dd3442d3-3dfa-4be6-be6e-68f0eaed1476 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4977ec05-3708-4e29-8d05-7a11742a2dca ;
                                            rdfs:label "TargetLoad"@en ;
@@ -1144,7 +1140,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The maximum load the user sets the indenter to apply to the sample, which is used as a stop condition during a force controlled measurement."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ddc449cf-95f5-523b-8940-6c491e79c6f7
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_ddc449cf-95f5-523b-8940-6c491e79c6f7
 :EMMO_ddc449cf-95f5-523b-8940-6c491e79c6f7 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_c685ca8f-d20b-5e80-886e-6dcb018bf3ff ;
                                            skos:prefLabel "NonLinearRegression"@en ;
@@ -1152,7 +1148,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Examples of non-linear regression include logistic regression (used to model binary outcomes), polynomial regression (used to model curvilinear relationships, i.e. tip area function), and decision trees (used to model complex decision-making processes"@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_df65d841-01e2-4ddb-a480-bf587861ffc3
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_df65d841-01e2-4ddb-a480-bf587861ffc3
 :EMMO_df65d841-01e2-4ddb-a480-bf587861ffc3 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_aceac63c-c061-4351-b940-a08531472dda ;
                                            rdfs:label "WeibullFunction"@en ;
@@ -1160,7 +1156,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The Weibull function is a probability distribution that models the time between events in a system that is subject to failure. It is commonly used in reliability engineering and statistical analysis."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_e033b8bc-aec3-508a-bf64-77a93e72df1f
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_e033b8bc-aec3-508a-bf64-77a93e72df1f
 :EMMO_e033b8bc-aec3-508a-bf64-77a93e72df1f rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:SecondaryData ;
                                            rdfs:label "ModelFittedData"@en ;
@@ -1169,7 +1165,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Typically, application of Oliver-Pharr contact mechanics model to extract from load and displacement raw data the sample stiffness, hardness, and elastic modulus."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_e34334b9-0b88-40b5-800e-68357b25bcbd
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_e34334b9-0b88-40b5-800e-68357b25bcbd
 :EMMO_e34334b9-0b88-40b5-800e-68357b25bcbd rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_aceac63c-c061-4351-b940-a08531472dda ;
                                            rdfs:label "GaussianFunction"@en ;
@@ -1177,7 +1173,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The Gaussian function, also known as the normal distribution, is a probability distribution that is widely used in statistics and mathematics. The Gaussian function is used to model real-valued random variables that are symmetric about the mean and have a finite range."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_e78d6d05-c2d4-48a5-be30-e2a9df3d7852
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_e78d6d05-c2d4-48a5-be30-e2a9df3d7852
 :EMMO_e78d6d05-c2d4-48a5-be30-e2a9df3d7852 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:SecondaryData ;
                                            rdfs:label "NanoindentationContactParameters"@en ;
@@ -1185,7 +1181,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The nanoindentation contact parameters indicate the corresponding contact depth and area of the measurement, which are calculated using equations from the Oliver-Pharr model and the calibration, respectively."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_e88b7313-1ce5-408e-a2d6-6886d70a5460
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_e88b7313-1ce5-408e-a2d6-6886d70a5460
 :EMMO_e88b7313-1ce5-408e-a2d6-6886d70a5460 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:PrimaryData ;
                                            rdfs:label "NormalisedData"@en ;
@@ -1193,7 +1189,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Nanoindentation Raw Data after scaling and centre operations, which is used when it is needed to neglect the effect of the order of magnitude of values, i.e. prior to performing training of machine learning algorithms."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ea7f0dd1-87af-5147-a9b9-b085e22a2e06
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_ea7f0dd1-87af-5147-a9b9-b085e22a2e06
 :EMMO_ea7f0dd1-87af-5147-a9b9-b085e22a2e06 rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationHardware ;
                                            rdfs:label "NanoindentationComponent"@en ;
@@ -1202,14 +1198,14 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The component which is part of a nanoindenter instrument."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ea9c225e-c135-2537-b932-02ad01c0208e
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_ea9c225e-c135-2537-b932-02ad01c0208e
 :EMMO_ea9c225e-c135-2537-b932-02ad01c0208e rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
                                            rdfs:label "HarmonicAmplitude"@en ;
                                            skos:prefLabel "HarmonicAmplitude"@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_ef4c77a5-c561-5edc-8bac-456c20e02ed1
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_ef4c77a5-c561-5edc-8bac-456c20e02ed1
 :EMMO_ef4c77a5-c561-5edc-8bac-456c20e02ed1 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_84470b1f-4d4a-46c8-931a-0a8627a4b997 ;
                                            skos:altLabel "NanoindentationDepth"@en ;
@@ -1217,13 +1213,13 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "This value indicates the position of the indenter relative to the sample surface."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_fa1g165e-c993-5137-b910-02bd04c2108f
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_fa1g165e-c993-5137-b910-02bd04c2108f
 :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationHardwareSpecification ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hardware specification during dynamic super-imposed movements."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_fad76672-5fc8-5f3a-b4e3-9a4566ede225
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_fad76672-5fc8-5f3a-b4e3-9a4566ede225
 :EMMO_fad76672-5fc8-5f3a-b4e3-9a4566ede225 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_fd9e155e-c995-5237-b930-02ad04c0208f ;
                                            skos:prefLabel "NixGaoModel"@en ;
@@ -1231,7 +1227,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "This model shows that the indentation size effect for crystalline materials can be accurately modeled using the concept of geometrically necessary dislocations."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_fd9e155e-c995-5237-b930-02ad04c0208f
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_fd9e155e-c995-5237-b930-02ad04c0208f
 :EMMO_fd9e155e-c995-5237-b930-02ad04c0208f rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:PostProcessingModel ,
                                                            [ rdf:type owl:Restriction ;
@@ -1243,30 +1239,30 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to contact mechanics model that describe the physics/mechanics of interaction between tip and sample and used to process nanoindentation raw data to extract the nanomechanical properties (i.e. stiffness, hardness, elastic modulus, etc.)."@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_fd9e255e-c435-2237-b932-02ad01c0208e
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_fd9e255e-c435-2237-b932-02ad01c0208e
 :EMMO_fd9e255e-c435-2237-b932-02ad01c0208e rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
                                            rdfs:label "HarmonicAmplitude"@en ;
                                            skos:prefLabel "HarmonicAmplitude"@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#EMMO_gg9c225e-c135-2537-b932-02ad01c0208e
+###  https://w3id.org/emmo/domain/nanoindentation#EMMO_gg9c225e-c135-2537-b932-02ad01c0208e
 :EMMO_gg9c225e-c135-2537-b932-02ad01c0208e rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f ;
                                            rdfs:label "HarmonicFrequency"@en ;
                                            skos:prefLabel "HarmonicFrequency"@en .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#SpringStiffness
+###  https://w3id.org/emmo/domain/nanoindentation#SpringStiffness
 :SpringStiffness rdf:type owl:Class ;
                  rdfs:subClassOf :StaticProperties .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#StaticProperties
+###  https://w3id.org/emmo/domain/nanoindentation#StaticProperties
 :StaticProperties rdf:type owl:Class .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#TipMovementParameter
+###  https://w3id.org/emmo/domain/nanoindentation#TipMovementParameter
 :TipMovementParameter rdf:type owl:Class .
 
 
@@ -1274,14 +1270,14 @@ raw data is a set of (unprocessed) data that is given directly as output from th
 #    Individuals
 #################################################################
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#CSM1
+###  https://w3id.org/emmo/domain/nanoindentation#CSM1
 :CSM1 rdf:type owl:NamedIndividual ,
                :EMMO_5ca6e1c1-93e9-5e1a-881b-2c2bd38074b1 ;
       chameo:hasOperator :Operator1 ;
       rdfs:label "Continuous Stiffness Measurement" .
 
 
-###  https://w3id.org/emmo/domain/domain-nanoindentation/nanoindentation#Operator1
+###  https://w3id.org/emmo/domain/nanoindentation#Operator1
 :Operator1 rdf:type owl:NamedIndividual ,
                     chameo:Operator ;
            <http://xmlns.com/foaf/0.1/name> "G. Konstantopoulos" .
