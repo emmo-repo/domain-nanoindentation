@@ -1224,6 +1224,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_fa1g165e-c993-5137-b910-02bd04c2108f
 :EMMO_fa1g165e-c993-5137-b910-02bd04c2108f rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationHardwareSpecification ;
+                                           skos:prefLabel "DynamicHardwareSpecification" ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hardware specification during dynamic super-imposed movements."@en .
 
 
