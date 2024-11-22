@@ -644,7 +644,7 @@ ns1:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f rdf:type owl:ObjectProperty ;
 ns1:EMMO_2337e25c_3c60_43fc_a8f9_b11a3f974291 rdf:type owl:ObjectProperty ;
                                               rdfs:subPropertyOf ns1:EMMO_ec2472ae_cf4a_46a5_8555_1556f5a6c3c5 ;
                                               rdfs:comment "The generic EMMO semiotical relation."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/computerscience#> ;
                                               rdfs:label "semiotical"@en ;
                                               skos:prefLabel "semiotical"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The generic EMMO semiotical relation."@en .
@@ -1046,7 +1046,7 @@ ns1:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 rdf:type owl:ObjectProperty ;
                                               rdfs:domain ns1:EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b ;
                                               rdfs:range ns1:EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d ;
                                               rdfs:comment "A relation that connects the semiotic object to the sign in a semiotic process."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/computerscience#> ;
                                               rdfs:label "hasSign"@en ;
                                               skos:prefLabel "hasSign"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A relation that connects the semiotic object to the sign in a semiotic process."@en .
@@ -2078,6 +2078,8 @@ ns1:EMMO_fe63194f_7c04_4dbd_a244_524b38b6699b rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasCharacterisationInput
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasCharacterisationInput> rdf:type owl:ObjectProperty ;
                                                                                             rdfs:subPropertyOf ns1:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                                                            rdfs:domain <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProcedure> ;
+                                                                                            rdfs:range <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationData> ;
                                                                                             rdfs:comment "" ;
                                                                                             rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                                                                             rdfs:label "hasCharacterisationInput"@en ;
@@ -2100,6 +2102,8 @@ ns1:EMMO_fe63194f_7c04_4dbd_a244_524b38b6699b rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasCharacterisationOutput
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasCharacterisationOutput> rdf:type owl:ObjectProperty ;
                                                                                              rdfs:subPropertyOf ns1:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+                                                                                             rdfs:domain <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProcedure> ;
+                                                                                             rdfs:range <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationData> ;
                                                                                              rdfs:comment "" ;
                                                                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                                                                              rdfs:label "hasCharacterisationOutput"@en ;
@@ -2178,7 +2182,7 @@ ns1:EMMO_fe63194f_7c04_4dbd_a244_524b38b6699b rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasDataQuality
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasDataQuality> rdf:type owl:ObjectProperty ;
                                                                                   rdfs:subPropertyOf ns1:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
-                                                                                  rdfs:domain <https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing> ;
+                                                                                  rdfs:domain <https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataPostProcessing> ;
                                                                                   rdfs:range <https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataQuality> ;
                                                                                   rdfs:comment "" ;
                                                                                   rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
@@ -2251,14 +2255,6 @@ ns1:EMMO_fe63194f_7c04_4dbd_a244_524b38b6699b rdf:type owl:ObjectProperty ;
                                                                                                skos:prefLabel "hasInstrumentForCalibration"@en .
 
 
-###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasInstrumentToBeCalibrated
-<https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasInstrumentToBeCalibrated> rdf:type owl:ObjectProperty ;
-                                                                                               rdfs:subPropertyOf ns1:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
-                                                                                               rdfs:domain <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CalibrationProcess> ;
-                                                                                               rdfs:range <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationMeasurementInstrument> ;
-                                                                                               rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> .
-
-
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasInteractionVolume
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasInteractionVolume> rdf:type owl:ObjectProperty ;
                                                                                         rdfs:subPropertyOf ns1:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
@@ -2326,7 +2322,7 @@ ns1:EMMO_fe63194f_7c04_4dbd_a244_524b38b6699b rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasMeasurementParameter
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasMeasurementParameter> rdf:type owl:ObjectProperty ;
                                                                                            rdfs:subPropertyOf ns1:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
-                                                                                           rdfs:domain <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationMeasurementProcess> ;
+                                                                                           rdfs:domain <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProcedure> ;
                                                                                            rdfs:range <https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementParameter> ;
                                                                                            rdfs:comment "" ;
                                                                                            rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
@@ -2401,7 +2397,7 @@ ns1:EMMO_fe63194f_7c04_4dbd_a244_524b38b6699b rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasPostProcessingModel
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasPostProcessingModel> rdf:type owl:ObjectProperty ;
                                                                                           rdfs:subPropertyOf ns1:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
-                                                                                          rdfs:domain <https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing> ;
+                                                                                          rdfs:domain <https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataPostProcessing> ;
                                                                                           rdfs:range <https://w3id.org/emmo/domain/characterisation-methodology/chameo#PostProcessingModel> ;
                                                                                           rdfs:comment "" ;
                                                                                           rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
@@ -2412,7 +2408,7 @@ ns1:EMMO_fe63194f_7c04_4dbd_a244_524b38b6699b rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasProcessingReproducibility
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasProcessingReproducibility> rdf:type owl:ObjectProperty ;
                                                                                                 rdfs:subPropertyOf ns1:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
-                                                                                                rdfs:domain <https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing> ;
+                                                                                                rdfs:domain <https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataPostProcessing> ;
                                                                                                 rdfs:range <https://w3id.org/emmo/domain/characterisation-methodology/chameo#ProcessingReproducibility> ;
                                                                                                 rdfs:comment "" ;
                                                                                                 rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
@@ -2916,7 +2912,7 @@ As another example, the joule (J) is used as a unit of energy, but never as a un
 — quantities of different quantity dimensions are always of different kinds, and
 — quantities having the same quantity dimension are not necessarily of the same kind.
 ISO 80000-1"""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "PhysicalQuantity"@en ;
                                               skos:prefLabel "PhysicalQuantity"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A 'Mathematical' entity that is made of a 'Numeral' and a 'MeasurementUnit' defined by a physical law, connected to a physical entity through a model perspective. Measurement is done according to the same model."@en .
@@ -3300,7 +3296,7 @@ ns1:EMMO_057e7d57_aff0_49de_911a_8861d85cef40 rdf:type owl:Class ;
                                               rdfs:comment "A discrete data whose elements can be decoded as tokens from one or more alphabets, without necessarily respecting syntactic rules."@en ,
                                                            """A symbolic entity is not necessarily graphical (e.g. it doesn't necessarily have the physical shape of a letter), but its elements can be decoded and put in relation with an alphabet.
 In other words, a sequence of bit \"1000010\" in a RAM (a non-graphical entity) is a valid symbol since it can be decoded through ASCII rules as the letter \"B\". The same holds for an entity standing for the sound of a voice saying: \"Hello\", since it can be decomposed in discrete parts, each of them being associated to a letter of an alphabet."""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/multiperspective/symbolic#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "Symbolic"@en ;
                                               skos:prefLabel "Symbolic"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A discrete data whose elements can be decoded as tokens from one or more alphabets, without necessarily respecting syntactic rules."@en ;
@@ -4189,7 +4185,7 @@ ns1:EMMO_0f6f0120_c079_4d95_bb11_4ddee05e530e rdf:type owl:Class ;
 A set of quantites being attributed to a measurand (measured quantitative property) together with any other available relevant information, like measurement uncertainty.
 
 -- VIM"""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "MeasurementResult"@en ;
                                               skos:prefLabel "MeasurementResult"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Result of a measurement.
@@ -4302,7 +4298,7 @@ ns1:EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069 rdf:type owl:Class ;
                                                                 owl:someValuesFrom ns1:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba
                                                               ] ;
                                               rdfs:comment "A 'Semiosis' that involves an 'Observer' that perceives another 'Physical' (the 'Object') through a specific perception mechanism and produces a 'Property' (the 'Sign') that stands for the result of that particular perception according to a well defined conventional procedure."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
                                               rdfs:label "Determination"@en ;
                                               skos:altLabel "Characterisation"@en ;
                                               skos:prefLabel "Determination"@en ;
@@ -5198,7 +5194,7 @@ ns1:EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c rdf:type owl:Class ;
 ###  https://w3id.org/emmo#EMMO_1b6a95fb_3df7_44c9_ad3d_419c9c5fe7cb
 ns1:EMMO_1b6a95fb_3df7_44c9_ad3d_419c9c5fe7cb rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_7286b164_df4c_4c14_a4b5_d41ad9c121f3 ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
                                               rdfs:label "Observed"@en ;
                                               skos:prefLabel "Observed"@en ;
                                               ns1:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "The biography of a person met by the author."@en .
@@ -5213,7 +5209,7 @@ ns1:EMMO_1c0b22a2_be82_4fa8_9e2b_a569a625d442 rdf:type owl:Class ;
                                                                 owl:someValuesFrom ns1:EMMO_4a1c73f1_b6f5_4d10_a3a6_5de90bac7cd0
                                                               ] ;
                                               rdfs:comment "A determination of an object without any actual interaction."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
                                               rdfs:label "Estimation"@en ;
                                               skos:prefLabel "Estimation"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A determination of an object without any actual interaction."@en .
@@ -5292,7 +5288,7 @@ ns1:EMMO_1c7f2dfe_0db4_4bf6_a0f6_853054a34ead rdf:type owl:Class ;
                                                                 owl:someValuesFrom ns1:EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926
                                                               ] ;
                                               rdfs:comment "A computation that provides a data output following the elaboration of some input data, using a data processing application."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "DataProcessing"@en ;
                                               skos:prefLabel "DataProcessing"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A computation that provides a data output following the elaboration of some input data, using a data processing application."@en .
@@ -5360,6 +5356,7 @@ ns1:EMMO_1d5305d7_5690_4e5a_92de_4611e8c356ef rdf:type owl:Class ;
 ###  https://w3id.org/emmo#EMMO_1d6b63d5_9938_483c_ad62_a09ac34153c9
 ns1:EMMO_1d6b63d5_9938_483c_ad62_a09ac34153c9 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_d5f98475_00ce_4987_99fb_262aed395e46 ;
+                                              owl:disjointWith <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtractionByCutting> ;
                                               rdfs:comment "Cutting workpieces between two cutting edges that move past each other (see Figure 1 [see figure in the standard])." ;
                                               rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
                                               rdfs:label "ShearCutting"@en ;
@@ -5520,7 +5517,7 @@ ns1:EMMO_1eb6b28e_f260_4f04_ada1_19c6dcb668d9 rdf:type owl:Class ;
 ns1:EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 ;
                                               rdfs:comment "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "Variable"@en ;
                                               skos:prefLabel "Variable"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en ;
@@ -5714,7 +5711,7 @@ ns1:EMMO_21205421_5783_4d3e_81e5_10c5d894a88a rdf:type owl:Class ;
                                               rdfs:comment "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity that can undergo a chemical reaction."@en ,
                                                            """Molecular entity is used as a general term for singular entities, irrespective of their nature, while chemical species stands for sets or ensembles of molecular entities.
 Note that the name of a compound may refer to the respective molecular entity or to the chemical species,"""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/physicalistic#> ,
                                                                "https://goldbook.iupac.org/terms/view/M03986"@en ;
                                               rdfs:label "MolecularEntity"@en ;
                                               skos:altLabel "ChemicalEntity"@en ;
@@ -5910,7 +5907,7 @@ ns1:EMMO_22522299_4091_4d1f_82a2_3890492df6db rdf:type owl:Class ;
                                                                 owl:someValuesFrom ns1:EMMO_314d0bd5_67ed_437e_a609_36d46147cea7
                                                               ] ;
                                               rdfs:comment "An experiment is a process that is intended to replicate a physical phenomenon in a controlled environment."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "Experiment"@en ;
                                               skos:prefLabel "Experiment"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An experiment is a process that is intended to replicate a physical phenomenon in a controlled environment."@en .
@@ -6064,7 +6061,7 @@ This happens due to e.g. the complexity of the object, the lack of a underlying 
 A 'SubjectiveProperty' cannot be used to univocally compare 'Object'-s.
 
 e.g. you cannot evaluate the beauty of a person on objective basis."""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
                                               rdfs:label "Subjective"@en ;
                                               skos:prefLabel "Subjective"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A coded conventional that cannot be univocally determined and depends on an agent (e.g. a human individual, a community) acting as black-box."@en ;
@@ -6579,7 +6576,7 @@ ns1:EMMO_2a888cdf_ec4a_4ec5_af1c_0343372fc978 rdf:type owl:Class ;
                                                            """The word objective does not mean that each observation will provide the same results. It means that the observation followed a well defined procedure.
 
 This class refers to what is commonly known as physical property, i.e. a measurable property of physical system, whether is quantifiable or not."""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
                                               rdfs:label "Objective"@en ;
                                               skos:prefLabel "Objective"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A coded conventional that is determined by each interpeter following a well defined determination procedure through a specific perception channel."@en .
@@ -6712,7 +6709,7 @@ ns1:EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72 rdf:type owl:Class ;
                                                            "Technology refers to methods, systems, and devices which are the result of scientific knowledge being used for practical purposes." ,
                                                            "application of scientific knowledge, tools, techniques, crafts or systems in order to solve a problem or to achieve an objective which can result in a product or process" ,
                                                            "application of scientific knowledge, tools, techniques, crafts, systems or methods of organization in order to solve a problem or achieve an objective" ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "TechnologyProcess"@en ;
                                               skos:altLabel "ProductionEngineeringProcess"@en ;
                                               skos:prefLabel "TechnologyProcess"@en ;
@@ -7166,7 +7163,7 @@ ns1:EMMO_321af35f_f0cc_4a5c_b4fe_8c2c0303fb0c rdf:type owl:Class ;
 ns1:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 ;
                                               rdfs:comment "The subclass of measurement units with no physical dimension."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
                                               rdfs:label "DimensionlessUnit"@en ;
                                               skos:prefLabel "DimensionlessUnit"@en ;
                                               ns1:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/UNITLESS"^^xsd:anyURI ;
@@ -7445,7 +7442,7 @@ ns1:EMMO_35d4c439_fcb6_4399_a855_a89a207b41e9 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_7286b164_df4c_4c14_a4b5_d41ad9c121f3 ;
                                               rdfs:comment "A coded that is not atomic with respect to a code of description."@en ,
                                                            "A description is a collection of properties that depicts an object. It is not atomic since it is made of several properties collected together."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
                                               rdfs:label "Description"@en ;
                                               skos:prefLabel "Description"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A coded that is not atomic with respect to a code of description."@en ;
@@ -7666,7 +7663,7 @@ ns1:EMMO_38b579de_4331_40e0_803d_09efa298e726 rdf:type owl:Class ;
                                                            """It is natural to define entities made or more than one smaller parts according to some unity criteria. One of the most general one applicable to causal systems is to ask that all the quantum parts of the system are bonded to the rest. 
 In other words, causal convexity excludes all quantums that leave the system (no more interacting), or that are not yet part of it (not yet interacting).
 So, a photon leaving a body is not part of the body as convex system, while a photon the is carrier of electromagnetic interaction between two molecular parts of the body, is part of the convex body."""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/physicalistic#> ;
                                               rdfs:label "PhysicalObject"@en ;
                                               skos:prefLabel "PhysicalObject"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A CausalSystem whose quantum parts are all bonded to the rest of the system."@en ;
@@ -7917,7 +7914,7 @@ ns1:EMMO_3ab914c1_5d8d_4a6e_804b_84aa89623c48 rdf:type owl:Class ;
 ns1:EMMO_3b031fa9_8623_4ea5_8b57_bcafb70c5c8b rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_65411b3d_c8d3_4111_86a9_a2ce0a64c647 ;
                                               rdfs:comment "A program aimed to provide a specific high level function to the user, usually hiding lower level procedures."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/computerscience#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "ApplicationProgram"@en ;
                                               skos:altLabel "App"@en ,
                                                             "Application"@en ;
@@ -7935,7 +7932,7 @@ ns1:EMMO_3b19eab4_79be_4b02_bdaf_ecf1f0067a68 rdf:type owl:Class ;
                                                                 owl:someValuesFrom ns1:EMMO_ea67caa5_2609_4e91_98ae_81103f2d5c25
                                                               ] ;
                                               rdfs:comment "A characterisation of an object with an actual interaction."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
                                               rdfs:label "Observation"@en ;
                                               skos:prefLabel "Observation"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A characterisation of an object with an actual interaction."@en .
@@ -8345,7 +8342,7 @@ ns1:EMMO_3ef37f82_cd1a_4d49_ace1_83b17487c8e2 rdf:type owl:Class ;
 ns1:EMMO_3f15d200_c97b_42c8_8ac0_d81d150361e2 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_b953f2b1_c8d1_4dd9_b630_d3ef6580c2bb ;
                                               rdfs:comment "For a given unit system, measured constants are physical constants that are not used to define the unit system. Hence, these constants have to be measured and will therefore be associated with an uncertainty."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "MeasuredConstant"@en ;
                                               skos:prefLabel "MeasuredConstant"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "For a given unit system, measured constants are physical constants that are not used to define the unit system. Hence, these constants have to be measured and will therefore be associated with an uncertainty."@en .
@@ -8411,7 +8408,7 @@ Space and time emerge following the network of causal connections between quantu
 Using physics concepts, we can think the quantum as an elementary particle (e.g. an electron) in a specific state between two causal interactions."""@en ,
                                                            "The class of entities without proper parts."@en ,
                                                            "The class of the mereological and causal fundamental entities."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/standardmodel#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
                                               rdfs:label "Quantum"@en ;
                                               skos:prefLabel "Quantum"@en ;
                                               ns1:EMMO_31252f35_c767_4b97_a877_1235076c3e13 """A quantum is the most fundamental item (both mereologically and causally) and is considered causally self-connected by definition.
@@ -8599,7 +8596,7 @@ ns1:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 rdf:type owl:Class ;
                                                               ns1:EMMO_bc37743c_37c4_4ec7_9d58_d1aae5567352 ;
                                               rdfs:comment "A instance of a material (e.g. nitrogen) can represent different states of matter. The fact that the individual also belongs to other classes (e.g. Gas) would reveal the actual form in which the material is found."@en ,
                                                            "The class of individuals standing for an amount of ordinary matter substance (or mixture of substances) in different states of matter or phases."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/physicalistic#> ;
                                               rdfs:label "Material"@en ;
                                               skos:prefLabel "Material"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of individuals standing for an amount of ordinary matter substance (or mixture of substances) in different states of matter or phases."@en ;
@@ -8791,7 +8788,7 @@ ns1:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce rdf:type owl:Class ;
                                                            """Following the common definition of process, the reader may think that every whole should be a process, since every 4D object always has a time dimension. However, in the EMMO we restrict the meaning of the word process to items whose evolution in time have a particular meaning for the ontologist (i.e. every 4D object unfolds in time, but not every 4D time unfolding may be of interest for the ontologist and categorized as a process).
 
 For this reason, the definition of every specific process subclass requires the introduction of a primitive concept."""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "Process"@en ;
                                               skos:altLabel "Occurrent"@en ,
                                                             "Perdurant"@en ;
@@ -8971,7 +8968,7 @@ ns1:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb rdf:type owl:Class ;
                                               rdfs:comment "A measurement always implies a causal interaction between the object and the observer."@en ,
                                                            "A measurement is the process of experimentally obtaining one or more measurement results that can reasonably be attributed to a quantity."@en ,
                                                            "An 'observation' that results in a quantitative comparison of a 'property' of an 'object' with a standard reference based on a well defined mesurement procedure."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "Measurement"@en ;
                                               skos:prefLabel "Measurement"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An 'observation' that results in a quantitative comparison of a 'property' of an 'object' with a standard reference based on a well defined mesurement procedure."@en ;
@@ -9081,7 +9078,7 @@ ns1:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 rdf:type owl:Class ;
                                               rdfs:comment "A procedure can be considered as an intentional process with a plan."@en ,
                                                            "The process in which an agent works with some entities according to some existing formalised operative rules."@en ,
                                                            "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "Procedure"@en ;
                                               skos:altLabel "Elaboration"@en ,
                                                             "Work"@en ;
@@ -9332,7 +9329,7 @@ ns1:EMMO_49267eba_5548_4163_8f36_518d65b583f9 rdf:type owl:Class ;
                                               rdfs:comment "The class of causal objects that stand for world objects according to a specific representational perspective."@en ,
                                                            """This class is the practical implementation of the EMMO pluralistic approach for which the only objective categorization is provided by the Universe individual and all the Quantum individuals.
 Between these two extremes, there are several subjective ways to categorize real world objects, each one provide under a 'Perspective' subclass."""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
                                               rdfs:label "Perspective"@en ;
                                               skos:prefLabel "Perspective"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of causal objects that stand for world objects according to a specific representational perspective."@en ;
@@ -9351,7 +9348,7 @@ Between these two extremes, there are several subjective ways to categorize real
 ns1:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
                                               rdfs:comment "An object which is instrumental for reaching a particular purpose through its characteristic functioning process, with particular reference to mechanical or electronic equipment."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "Device"@en ;
                                               skos:altLabel "Equipment"@en ,
                                                             "Machine"@en ;
@@ -9412,7 +9409,7 @@ ns1:EMMO_498aad49_f8d4_40a4_a9eb_efd563a0115f rdf:type owl:Class ;
 ns1:EMMO_4a1c73f1_b6f5_4d10_a3a6_5de90bac7cd0 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c ;
                                               rdfs:comment "A characteriser that declares a property for an object without actually interact with it with the specific interaction required by the property definition (i.e. infer a property from other properties)."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/multiperspective/properties#> ;
                                               rdfs:label "Estimator"@en ;
                                               skos:prefLabel "Estimator"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A characteriser that declares a property for an object without actually interact with it with the specific interaction required by the property definition (i.e. infer a property from other properties)."@en .
@@ -9470,7 +9467,7 @@ ns1:EMMO_4b32fc1e_5293_4247_9e8d_1175df9f1c0b rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_aaad78a9_abaf_4f97_9c1a_d763a94c4ba3 ,
                                                               ns1:EMMO_f055e217_0b1b_4e7e_b8be_7340211b0c5e ;
                                               rdfs:comment "The class of individuals that satisfy a whole defining criteria (i.e. belongs to a subclass of whole) and have no proper parts that satisfy that same criteria (no parts that are of the same type of the whole)."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
                                               rdfs:label "StrictFundamental"@en ;
                                               skos:prefLabel "StrictFundamental"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of individuals that satisfy a whole defining criteria (i.e. belongs to a subclass of whole) and have no proper parts that satisfy that same criteria (no parts that are of the same type of the whole)."@en .
@@ -9674,7 +9671,7 @@ ns1:EMMO_4dae1cac_d61a_4abb_8f74_2568b7f2d6d7 rdf:type owl:Class ;
 ns1:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926 ;
                                               rdfs:comment "Discrete data that are decoded as a sequence of 1/0, or true/false, or on/off."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/computerscience#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "DigitalData"@en ;
                                               skos:altLabel "BinaryData"@en ;
                                               skos:prefLabel "DigitalData"@en ;
@@ -10126,7 +10123,7 @@ ns1:EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_89a0c87c_0804_4013_937a_6fe234d9499c ;
                                               rdfs:comment "A physical made of more than one symbol sequentially arranged."@en ,
                                                            "A string is made of concatenated symbols whose arrangement is one-dimensional. Each symbol can have only one previous and one next neighborhood (bidirectional list)."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/multiperspective/symbolic#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "String"@en ;
                                               skos:prefLabel "String"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A physical made of more than one symbol sequentially arranged."@en ;
@@ -10517,7 +10514,7 @@ ns1:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 ;
                                               rdfs:comment "The class of general mathematical symbolic objects respecting mathematical syntactic rules."@en ,
                                                            "A mathematical object in this branch is not representing a concept but an actual graphical object built using mathematcal symbols arranged in some way, according to math conventions." ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "Mathematical"@en ;
                                               skos:prefLabel "Mathematical"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of general mathematical symbolic objects respecting mathematical syntactic rules."@en .
@@ -10702,7 +10699,7 @@ Following the two examples, a marathon individual is a maximal that can be decom
 ns1:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_38b579de_4331_40e0_803d_09efa298e726 ;
                                               rdfs:comment "The class of physical objects possessing a structure that is larger than a single composite particle, for which its bosonic or fermionic nature is undetermined." ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/physicalistic#> ;
                                               rdfs:label "CompositePhysicalObject"@en ;
                                               skos:prefLabel "CompositePhysicalObject"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of physical objects possessing a structure that is larger than a single composite particle, for which its bosonic or fermionic nature is undetermined." .
@@ -11004,7 +11001,7 @@ ns1:EMMO_5b2222df_4da6_442f_8244_96e9e45887d1 rdf:type owl:Class ;
 It is possible to identify more than one concept that can be reasonably labelled with the term \"matter\". For example, it is possible to label as matter only the entities that are made up of atoms. Or more generally, we can be more fine-grained and call \"matter\" the entities that are made up of protons, neutrons or electrons, so that we can call matter also a neutron radiation or a cathode ray.
 A more fundamental approach, that we embrace for the EMMO, considers matter as entities that are made of fermions (i.e. quarks and leptons). This would exclude particles like the W and Z bosons that possess some mass, but are not fermions.
 Antimatter is a subclass of matter."""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/physicalistic#> ;
                                               rdfs:label "Matter"@en ;
                                               skos:altLabel "PhysicalSubstance"@en ;
                                               skos:prefLabel "Matter"@en ;
@@ -11736,7 +11733,7 @@ ns1:EMMO_65a007dc_2550_46b0_b394_3346c67fbb69 rdf:type owl:Class ;
                                                               ] ;
                                               rdfs:comment "A system is conceived as an aggregate of things that 'work' (or interact) together. While a system extends in time through distinct temporal parts (like every other 4D object), this elucdation focuses on a timescale in which the obejct shows a persistence in time."@en ,
                                                            "An object that is made of a set of sub objects working together as parts of a mechanism or an interconnecting network (natural or artificial); a complex whole."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "HolisticSystem"@en ;
                                               skos:prefLabel "HolisticSystem"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An object that is made of a set of sub objects working together as parts of a mechanism or an interconnecting network (natural or artificial); a complex whole."@en .
@@ -12398,7 +12395,7 @@ ns1:EMMO_6e9cb807_fc68_4bcf_b3ba_5fccc887c644 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_5b2222df_4da6_442f_8244_96e9e45887d1 ;
                                               owl:disjointWith ns1:EMMO_f13672a3_59cc_40ed_8def_65009a8f74e6 ;
                                               rdfs:comment "Matter composed of only matter particles, excluding anti-matter particles."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/physicalistic#> ;
                                               rdfs:label "OrdinaryMatter"@en ;
                                               skos:prefLabel "OrdinaryMatter"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Matter composed of only matter particles, excluding anti-matter particles."@en .
@@ -12648,7 +12645,7 @@ ns1:EMMO_71d1c8f0_c6e3_44b5_a4b6_1b74ff35698a rdf:type owl:Class ;
 ns1:EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 ;
                                               rdfs:comment "\"Quantity, in a system of quantities, defined in terms of the base quantities of that system\"."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "DerivedQuantity"@en ;
                                               skos:prefLabel "DerivedQuantity"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "\"Quantity, in a system of quantities, defined in terms of the base quantities of that system\"."@en ;
@@ -13133,7 +13130,7 @@ ns1:EMMO_79575941_45dc_4f15_bb59_dc04dff2c92d rdf:type owl:Class ;
 ns1:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 ;
                                               rdfs:comment "The superclass for all physical quantities classes that are categorized according to some domain of interests (e.g. metallurgy, chemistry), property (intensive/extensive) or application."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "CategorizedPhysicalQuantity"@en ;
                                               rdfs:seeAlso "https://physics.nist.gov/cuu/Constants" ;
                                               skos:prefLabel "CategorizedPhysicalQuantity"@en ;
@@ -13378,7 +13375,7 @@ ns1:EMMO_7dea2572_ab42_45bd_9fd7_92448cec762a rdf:type owl:Class ;
                                               rdfs:comment """A set of one or more 'MeasuringInstruments' and often other devices, including any reagent and supply, assembled and adapted to give information used to generate 'MeasuredQuantityProperty' within specified intervals for quantities of specified kinds.
 
 -- VIM"""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "MeasuringSystem"@en ;
                                               skos:prefLabel "MeasuringSystem"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A set of one or more 'MeasuringInstruments' and often other devices, including any reagent and supply, assembled and adapted to give information used to generate 'MeasuredQuantityProperty' within specified intervals for quantities of specified kinds.
@@ -13800,7 +13797,7 @@ ns1:EMMO_82fc8506_1f84_4add_9683_abea077bd1e3 rdf:type owl:Class ;
 Is temporaly fundamental, meaning that it can have other products as holistic spatial parts, but its holistic temporal parts are not products. In other words, the individual must encompass the whole lifetime from creation to disposal.
 A product can be a tangible object (e.g. a manufactured object), a process (e.g. service). It can be the outcome of a natural or an artificially driven process.
 It must have and initial stage of its life that is also an outcome of a intentional process."""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "Product"@en ;
                                               skos:altLabel "Output"@en ;
                                               skos:prefLabel "Product"@en ;
@@ -14107,7 +14104,7 @@ ns1:EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 rdf:type owl:Class ;
                                               rdfs:comment "All or part of the programs, procedures, rules, and associated documentation of an information processing system."@en ,
                                                            """Software is usually used as a generic term for programs. However, in its broadest sense it can refer to all information (i.e., both programs and data) in electronic form and can provide a distinction from hardware, which refers to computers or other electronic systems on which software can exist and be use.
 Here we explicitly include in the definition also all the data (e.g. source code, script files) that takes part to the building of the executable, are necessary to the execution of a program or that document it for the users."""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/computerscience#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "Software"@en ;
                                               skos:prefLabel "Software"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "All or part of the programs, procedures, rules, and associated documentation of an information processing system."@en ;
@@ -14179,7 +14176,7 @@ ns1:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_82fc8506_1f84_4add_9683_abea077bd1e3 ,
                                                               ns1:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
                                               rdfs:comment "An object that has been designed and manufactured for a particular purpose."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "ManufacturedProduct"@en ;
                                               skos:altLabel "Artifact"@en ,
                                                             "Engineered"@en ,
@@ -14236,7 +14233,7 @@ ns1:EMMO_873b0ab3_88e6_4054_b901_5531e01f14a4 rdf:type owl:Class ;
                                                            """The specification of a measurand requires knowledge of the kind of quantity, description of the state of the phenomenon, body, or substance carrying the quantity, including any relevant component, and the chemical entities involved.
 
 -- VIM"""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "MeasuredProperty"@en ;
                                               skos:prefLabel "MeasuredProperty"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A quantity that is the result of a well-defined measurement procedure."@en .
@@ -14246,7 +14243,7 @@ ns1:EMMO_873b0ab3_88e6_4054_b901_5531e01f14a4 rdf:type owl:Class ;
 ns1:EMMO_8786cb47_8e1f_4968_9b15_f6d41fc51252 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b ;
                                               rdfs:comment "A manufacturing with an output that is an object with a specific function, shape, or intended use, not simply a material."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "WorkpieceManufacturing"@en ;
                                               rdfs:seeAlso "DIN 8580:2020"@en ,
                                                            """ISO 15531-1:2004
@@ -14350,7 +14347,7 @@ ns1:EMMO_88470739_03d3_4c47_a03e_b30a1288d50c rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_ffe760a2_9d1f_4aef_8bee_1f450f9cb00d ;
                                               rdfs:comment "A mathematical string that express a relation between the elements in one set X to elements in another set Y."@en ,
                                                            "The set X is called domain and the set Y range or codomain."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
                                               rdfs:label "MathematicalFormula"@en ;
                                               skos:prefLabel "MathematicalFormula"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A mathematical string that express a relation between the elements in one set X to elements in another set Y."@en .
@@ -14524,7 +14521,7 @@ ns1:EMMO_8944581c_64da_46a9_be29_7074f7cc8098 rdf:type owl:Class ;
 ns1:EMMO_89762966_8076_4f7c_b745_f718d653e8e2 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_b953f2b1_c8d1_4dd9_b630_d3ef6580c2bb ;
                                               rdfs:comment "Physical constant used to define a unit system. Hence, when expressed in that unit system they have an exact value with no associated uncertainty."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "ExactConstant"@en ;
                                               skos:prefLabel "ExactConstant"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Physical constant used to define a unit system. Hence, when expressed in that unit system they have an exact value with no associated uncertainty."@en .
@@ -14540,7 +14537,7 @@ ns1:EMMO_89a0c87c_0804_4013_937a_6fe234d9499c rdf:type owl:Class ;
                                                               ] ;
                                               rdfs:comment "A symbolic entity made of other symbolic entities according to a specific spatial configuration."@en ,
                                                            "This class collects individuals that represents arrangements of strings, or other symbolic compositions, without any particular predifined arrangement schema."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/multiperspective/symbolic#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "SymbolicConstruct"@en ;
                                               skos:prefLabel "SymbolicConstruct"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A symbolic entity made of other symbolic entities according to a specific spatial configuration."@en ;
@@ -14645,7 +14642,7 @@ ns1:EMMO_8b1367d6_0133_4b56_acc1_fa8b058169e3 rdf:type owl:Class ;
                                                                     ns1:EMMO_29108c7c_9087_4992_ab1c_02561665df21
                                                                   ) ;
                                               rdfs:comment "A composite particle is a bound state of elementary particles for which it is still possible to define its bosonic or fermionic behaviour."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/physicalistic#> ;
                                               rdfs:label "CompositePhysicalParticle"@en ;
                                               skos:prefLabel "CompositePhysicalParticle"@en ;
                                               ns1:EMMO_31252f35_c767_4b97_a877_1235076c3e13 "A composite particle is a bound state of elementary particles for which it is still possible to define its bosonic or fermionic behaviour."@en .
@@ -14757,7 +14754,7 @@ ns1:EMMO_8c537c06_8e1d_4a3b_a251_1c89bb2c4790 rdf:type owl:Class ;
 ns1:EMMO_8c64fcfa_23aa_45f8_9e58_bdfd065fab8f rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_9e029526_79a2_47a8_a151_dd0545db471b ;
                                               rdfs:comment "A variable that stand for a numerical constant, even if it is unknown."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
                                               rdfs:label "Constant"@en ;
                                               skos:prefLabel "Constant"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A variable that stand for a numerical constant, even if it is unknown."@en .
@@ -15075,7 +15072,7 @@ ns1:EMMO_8fdabd25_01e0_4296_b82a_09d1c34e52d4 rdf:type owl:Class ;
 ns1:EMMO_90589553_5625_4074_8f0d_0532fd7eb42b rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_8786cb47_8e1f_4968_9b15_f6d41fc51252 ;
                                               rdfs:comment "A manufacturing process in which the shape of a workpiece is changed by breaking the material cohesion at the processing point and thus the material cohesion is reduced overall."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "SeparateManufacturing"@en ;
                                               rdfs:seeAlso "DIN 8580:2020"@en ;
                                               skos:altLabel "CuttingManufacturing"@en ,
@@ -15127,7 +15124,7 @@ ns1:EMMO_909415d1_7c43_4d5e_bbeb_7e1910159f66 rdf:type owl:Class ;
 
 International vocabulary of metrology (VIM)"""@en ,
                                                            "An 'ObjectiveProperty' that cannot be quantified."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "NominalProperty"@en ;
                                               skos:prefLabel "NominalProperty"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An 'ObjectiveProperty' that cannot be quantified."@en ;
@@ -15169,7 +15166,7 @@ However that's not possible in general, since we will finally end to temporal pa
 In other terms, if the time span of a temporal part is lower than the inverse of the frequency of interactions between the constituents, then the constituents in such temporal part are not connected. The object is no more an object, neither an item, but simply a collection of fundamental parts.
 To overcome this issue, we can identify an minimum holistic temporal part (a lower time interval value), below which a specific definition for an object type does not hold anymore, that is called a fundamental."""@en ,
                                                            "A whole that is identified according to a criteria based on its spatial configuration that is satisfied throughout its time extension."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "Object"@en ;
                                               skos:altLabel "Continuant"@en ,
                                                             "Endurant"@en ;
@@ -16007,7 +16004,7 @@ ns1:EMMO_9b075686_4ac2_43bb_b2a3_17b3ea24ff17 rdf:type owl:Class ;
 ###  https://w3id.org/emmo#EMMO_9b87d718_9dcc_4f7d_ad20_12c2aa4c76be
 ns1:EMMO_9b87d718_9dcc_4f7d_ad20_12c2aa4c76be rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_7286b164_df4c_4c14_a4b5_d41ad9c121f3 ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
                                               rdfs:label "Estimated"@en ;
                                               skos:prefLabel "Estimated"@en ;
                                               ns1:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "The biography of a person that the author have not met."@en .
@@ -16108,7 +16105,7 @@ ns1:EMMO_9bc6da11_528a_44e8_bd9e_c4154eae7e55 rdf:type owl:Class ;
 ns1:EMMO_9be5fcc4_0d8b_481d_b984_6338d4b55588 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_ea67caa5_2609_4e91_98ae_81103f2d5c25 ;
                                               rdfs:comment "An observer that makes use of a measurement tool and provides a quantitative property."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/multiperspective/properties#> ;
                                               rdfs:label "Measurer"@en ;
                                               skos:prefLabel "Measurer"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An observer that makes use of a measurement tool and provides a quantitative property."@en .
@@ -16140,7 +16137,7 @@ ns1:EMMO_9c32fd69_f480_4130_83b3_fb25d9face14 rdf:type owl:Class ;
 ns1:EMMO_9c407ac0_fd4c_4178_8763_95fad9fe29ec rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 ;
                                               rdfs:comment "The superclass for all physical quantities classes that are categorized according to a standard (e.g. ISQ)." ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "StandardizedPhysicalQuantity"@en ;
                                               skos:prefLabel "StandardizedPhysicalQuantity"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The superclass for all physical quantities classes that are categorized according to a standard (e.g. ISQ)." .
@@ -16215,7 +16212,7 @@ ns1:EMMO_9d8f708a_f291_4d72_80ec_362c6e6bbca6 rdf:type owl:Class ;
 ns1:EMMO_9e029526_79a2_47a8_a151_dd0545db471b rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895 ;
                                               rdfs:comment "A variable standing for a numerical defined mathematical object like e.g. a number, a vector of numbers, a matrix of numbers."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "NumericalVariable"@en ;
                                               skos:prefLabel "NumericalVariable"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A variable standing for a numerical defined mathematical object like e.g. a number, a vector of numbers, a matrix of numbers."@en .
@@ -16477,7 +16474,7 @@ e.g. a math symbol is not made of other math symbols
 A Symbol may be a String in another language.
 e.g. \"Bq\" is the symbol for Becquerel units when dealing with metrology, or a string of \"B\" and \"q\" symbols when dealing with characters."""@en ,
                                                            "The class of individuals that stand for an elementary mark of a specific symbolic code (alphabet)."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "Symbol"@en ;
                                               skos:altLabel "AlphabeticEntity"@en ;
                                               skos:prefLabel "Symbol"@en ;
@@ -16769,7 +16766,7 @@ ns1:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b rdf:type owl:Class ;
                                                               ] ;
                                               rdfs:comment "Deals with entities that have a defined shape."@en ,
                                                            "The process of transforming precursor objects (e.g. raw materials) into a product by the use of manual labor, machinery or chemical/biological processes."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "Manufacturing"@en ;
                                               rdfs:seeAlso "DIN 8580:2020"@en ,
                                                            """ISO 15531-1:2004
@@ -17102,7 +17099,7 @@ ns1:EMMO_aa7397ff_2815_434e_9b99_e4c6a80e034e rdf:type owl:Class ;
 ns1:EMMO_aaad78a9_abaf_4f97_9c1a_d763a94c4ba3 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 ;
                                               rdfs:comment "The class of individuals that satisfy a whole defining criteria (i.e. belongs to a subclass of whole) and have no temporal parts that satisfy that same criteria (no parts that are of the same type of the whole)."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "TemporallyFundamental"@en ;
                                               skos:prefLabel "TemporallyFundamental"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of individuals that satisfy a whole defining criteria (i.e. belongs to a subclass of whole) and have no temporal parts that satisfy that same criteria (no parts that are of the same type of the whole)."@en .
@@ -17232,7 +17229,7 @@ ns1:EMMO_acaaa124_3dde_48b6_86e6_6ec6f364f408 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 ;
                                               rdfs:comment """\"Quantity in a conventionally chosen subset of a given system of quantities, where no quantity in the subset can be expressed in terms of the other quantities within that subset\"
 ISO 80000-1"""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "BaseQuantity"@en ;
                                               skos:prefLabel "BaseQuantity"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """\"Quantity in a conventionally chosen subset of a given system of quantities, where no quantity in the subset can be expressed in terms of the other quantities within that subset\"
@@ -18067,7 +18064,7 @@ ns1:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba rdf:type owl:Class ;
                                                               ] ;
                                               rdfs:comment "A coded that makes use of an atomic symbol with respect to the code used to refer to the interaction."@en ,
                                                            "A property is atomic in the sense that is aimed to deliver one and one only aspect of the object according to one code, such as the color with one sign (e.g., black) or a quantitiative property (e.g., 1.4 kg)."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
                                               rdfs:label "Property"@en ;
                                               skos:prefLabel "Property"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A coded that makes use of an atomic symbol with respect to the code used to refer to the interaction."@en ;
@@ -18211,7 +18208,7 @@ ns1:EMMO_b953f2b1_c8d1_4dd9_b630_d3ef6580c2bb rdf:type owl:Class ;
                                               rdfs:comment """Physical constants are categorised into \"exact\" and measured constants.
 
 With \"exact\" constants, we refer to physical constants that have an exact numerical value after the revision of the SI system that was enforsed May 2019."""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "PhysicalConstant"@en ;
                                               skos:prefLabel "PhysicalConstant"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Physical constants are categorised into \"exact\" and measured constants.
@@ -18295,7 +18292,7 @@ ns1:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c rdf:type owl:Class ;
                                                                 owl:someValuesFrom ns1:EMMO_c130614a_2985_476d_a7ed_8a137847703c
                                                               ] ;
                                               rdfs:comment "A process occurring with the active participation of an agent that drives the process according to a specific objective (intention)."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "IntentionalProcess"@en ;
                                               skos:altLabel "Project"@en ;
                                               skos:prefLabel "IntentionalProcess"@en ;
@@ -18369,7 +18366,7 @@ ns1:EMMO_bc37743c_37c4_4ec7_9d58_d1aae5567352 rdf:type owl:Class ;
                                                                     ns1:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2
                                                                   ) ;
                                               rdfs:comment "A composite physical object made of fermions (i.e. having mass and occupying space)." ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/physicalistic#> ;
                                               rdfs:label "Substance"@en ;
                                               skos:prefLabel "Substance"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A composite physical object made of fermions (i.e. having mass and occupying space)." .
@@ -18527,7 +18524,7 @@ ns1:EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926 rdf:type owl:Class ;
                                               rdfs:comment """A discrete schema may be based on a continuum material basis that is filtered according to its variations. For example, a continuous voltage based signal can be considered 1 or 0 according to some threshold.
 Discrete does not mean tha the material basis is discrete, but that the data are encoded according to such step-based rules."""@en ,
                                                            "Data whose variations are decoded according to a discrete schema."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/multiperspective/symbolic#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "DiscreteData"@en ;
                                               skos:prefLabel "DiscreteData"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Data whose variations are decoded according to a discrete schema."@en ;
@@ -18857,7 +18854,7 @@ ns1:EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da rdf:type owl:Class ;
 is desirable (μm/m, nmol/mol).
 -- SI Brochure"""@en ,
                                                            "Unit for fractions of quantities of the same kind, to aid the understanding of the quantity being expressed."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
                                               rdfs:label "FractionUnit"@en ;
                                               skos:altLabel "RatioUnit"@en ;
                                               skos:prefLabel "FractionUnit"@en ;
@@ -19026,7 +19023,7 @@ The unity criterion beyond the definition of a causal structure (the most genera
 - is made of at least two quantums (a structure is not a simple entity)
 - all quantum parts form a causally connected graph"""@en ,
                                                            "The union of CausalPath and CausalSystem classes."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
                                               rdfs:label "CausalStructure"@en ;
                                               skos:altLabel "CausalObject"@en ;
                                               skos:prefLabel "CausalStructure"@en ;
@@ -19142,7 +19139,7 @@ ns1:EMMO_c7013b53_3071_410b_a5e4_a8d266dcdfb5 rdf:type owl:Class ;
                                               rdfs:comment "An icon that focusing WHAT the object does."@en ,
                                                            "An icon that imitates one representative character of the object. It share external similarities with the object, but not necessarily the same internal logical structure."@en ,
                                                            "This subclass of icon inspired by Peirceian category (c) the metaphor, which represents the representative character of a sign by representing a parallelism in something else."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
                                               rdfs:label "FunctionalIcon"@en ;
                                               skos:prefLabel "FunctionalIcon"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An icon that imitates one representative character of the object. It share external similarities with the object, but not necessarily the same internal logical structure."@en ;
@@ -19592,7 +19589,7 @@ ns1:EMMO_cbdea88b_fef1_4c7c_b69f_ae1f0f241c4a rdf:type owl:Class ;
 The role of dimensional unit and its subclasses is to express the physical dimensionality that is carried by the unit.
 
 Since the dimensionality of a physical quantity can be written as the product of powers of the physical dimensions of the base quantities in the selected system of quantities, the physical dimensionality of a measurement unit is uniquely determined by the exponents. For a dimensional unit, at least one of these exponents must be non-zero (making it disjoint from dimensionless units)."""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "DimensionalUnit"@en ;
                                               skos:prefLabel "DimensionalUnit"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A subclass of measurement unit focusing on the physical dimensionality that is carried by the unit."@en ;
@@ -20235,10 +20232,9 @@ ns1:EMMO_d5f3e0e5_fc7d_4e64_86ad_555e74aaff84 rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo#EMMO_d5f98475_00ce_4987_99fb_262aed395e46
 ns1:EMMO_d5f98475_00ce_4987_99fb_262aed395e46 rdf:type owl:Class ;
-                                              rdfs:subClassOf ns1:EMMO_90589553_5625_4074_8f0d_0532fd7eb42b ,
-                                                              <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtraction> ;
+                                              rdfs:subClassOf ns1:EMMO_90589553_5625_4074_8f0d_0532fd7eb42b ;
                                               rdfs:comment "Mechanical separation of workpieces without the formation of shapeless material, i.e. also without chips (chipless)." ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "Cutting"@en ;
                                               skos:altLabel "Schneiden" ;
                                               skos:prefLabel "Cutting"@en .
@@ -20363,7 +20359,7 @@ For example, when a Boeing 747 is used as a sign for another Boeing 747."""@en ,
 (b) the diagram, whose internal relations, mainly dyadic or so taken, represent by analogy the relations in something (e.g. math formula, geometric flowchart)
 (c) the metaphor, which represents the representative character of a sign by representing a parallelism in something else
 [Wikipedia]"""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
                                               rdfs:label "Icon"@en ;
                                               skos:altLabel "Model"@en ,
                                                             "Simulacrum"@en ;
@@ -20502,7 +20498,7 @@ Then I have two different physical quantities that are properties thanks to two 
 ns1:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_057e7d57_aff0_49de_911a_8861d85cef40 ;
                                               rdfs:comment "A language object is a discrete data entity respecting a specific language syntactic rules (a well-formed formula)."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                               rdfs:label "Language"@en ;
                                               skos:prefLabel "Language"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A language object is a discrete data entity respecting a specific language syntactic rules (a well-formed formula)."@en .
@@ -20855,7 +20851,7 @@ ns1:EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec rdf:type owl:Class ;
                                                            """The word objective does not mean that each observation will provide the same results. It means that the observation followed a well defined procedure.
 
 This class refers to what is commonly known as physical property, i.e. a measurable property of physical system, whether is quantifiable or not."""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "ObjectiveProperty"@en ;
                                               skos:altLabel "PhysicalProperty"@en ,
                                                             "QuantitativeProperty"@en ;
@@ -21494,7 +21490,7 @@ f(v0, v1, ..., vn) = g(v0, v1, ..., vn)
 
 where f is the left hand and g the right hand  side expressions and v0, v1, ..., vn are the variables."""@en ,
                                                            "The class of 'mathematical'-s that stand for a statement of equality between two mathematical expressions."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
                                               rdfs:label "Equation"@en ;
                                               skos:prefLabel "Equation"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of 'mathematical'-s that stand for a statement of equality between two mathematical expressions."@en ;
@@ -21664,7 +21660,7 @@ ns1:EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac rdf:type owl:Class ;
                                                                   ) ;
                                               rdfs:comment "A causal system provides the most general concept of system, being a union of causal structures interacting together. In its most simple form, a causal system is an interlacement of causal paths (the most simple structure type)."@en ,
                                                            "A non-path causal structure"@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/standardmodel#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
                                               rdfs:label "CausalSystem"@en ;
                                               skos:prefLabel "CausalSystem"@en ;
                                               ns1:EMMO_31252f35_c767_4b97_a877_1235076c3e13 "A causal system provides the most general concept of system, being a union of causal structures interacting together. In its most simple form, a causal system is an interlacement of causal paths (the most simple structure type)."@en ;
@@ -21990,7 +21986,7 @@ ns1:EMMO_ea47add2_8e93_4659_a5f0_e6879032dee0 rdf:type owl:Class ;
 ns1:EMMO_ea67caa5_2609_4e91_98ae_81103f2d5c25 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c ;
                                               rdfs:comment "A characteriser that declares a property for an object through the specific interaction required by the property definition."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/multiperspective/properties#> ;
                                               rdfs:label "Observer"@en ;
                                               skos:prefLabel "Observer"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A characteriser that declares a property for an object through the specific interaction required by the property definition."@en .
@@ -22114,7 +22110,7 @@ In this material branch, H atom is a particular case, with respect to higher ato
 
 We cannot say that H₂ molecule has direct part two H atoms, but has direct part two H nucleus."""@en ,
                                                            "An 'atom' is a 'nucleus' surrounded by an 'electron_cloud', i.e. a quantum system made of one or more bounded electrons."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/physicalistic#> ;
                                               rdfs:label "Atom"@en ;
                                               skos:altLabel "ChemicalElement"@en ;
                                               skos:prefLabel "Atom"@en ;
@@ -22527,7 +22523,7 @@ ns1:EMMO_efe73b0e_006b_417a_98a7_6db26b3ce2ac rdf:type owl:Class ;
 ns1:EMMO_eff42cb3_208e_4768_9a39_f8b6b3c3d7a2 rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
                                               rdfs:comment "A procedure that deals with quantitative symbols (i.e. symbols associated with a quantitative oriented language)."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "Computation"@en ;
                                               skos:prefLabel "Computation"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A procedure that deals with quantitative symbols (i.e. symbols associated with a quantitative oriented language)."@en ;
@@ -22753,7 +22749,7 @@ ns1:EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929 rdf:type owl:Class ;
                                                            """Device used for making measurements, alone or in conjunction with one or more supplementary devices.
 
 -- VIM"""@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "MeasuringInstrument"@en ;
                                               skos:prefLabel "MeasuringInstrument"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Device used for making measurements, alone or in conjunction with one or more supplementary devices.
@@ -23053,7 +23049,7 @@ ns1:EMMO_f7ed665b_c2e1_42bc_889b_6b42ed3a36f0 rdf:type owl:Class ;
 
 Abramowitz and Stegun, 1968"""@en ,
                                                            "An analogical icon expressed in mathematical language."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                               rdfs:label "MathematicalModel"@en ;
                                               skos:prefLabel "MathematicalModel"@en ;
                                               ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An analogical icon expressed in mathematical language."@en .
@@ -23552,7 +23548,7 @@ ns1:EMMO_fc86c700_ccea_441c_b628_ad236f030fe6 rdf:type owl:Class ;
 ns1:EMMO_fcae603e_aa6e_4940_9fa1_9f0909cabf3b rdf:type owl:Class ;
                                               rdfs:subClassOf ns1:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
                                               rdfs:comment "An holistic spatial part of a whole."@en ;
-                                              rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                              rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
                                               rdfs:label "NonTemporalRole"@en ;
                                               skos:altLabel "HolisticSpatialPart"@en ;
                                               skos:prefLabel "NonTemporalRole"@en ;
@@ -24041,19 +24037,17 @@ ns1:emmo_fd2aa864_eef7_4c3d_8243_9ea832d9df3e rdf:type owl:Class ;
                                                                                    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Calibration data are used to provide correction of measured data or perform uncertainty calculations. They are generally the result of a measuerement on a reference specimen."@en .
 
 
-###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#CalibrationDataPostProcessing
-<https://w3id.org/emmo/domain/characterisation-methodology/chameo#CalibrationDataPostProcessing> rdf:type owl:Class ;
-                                                                                                 rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataPostProcessing> ;
-                                                                                                 rdfs:comment "Post-processing of the output of the calibration in order to get the actual calibration data to be used as input for the measurement."@en ;
-                                                                                                 rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
-                                                                                                 rdfs:label "CalibrationDataPostProcessing"@en ;
-                                                                                                 skos:prefLabel "CalibrationDataPostProcessing"@en ;
-                                                                                                 ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Post-processing of the output of the calibration in order to get the actual calibration data to be used as input for the measurement."@en .
-
-
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#CalibrationProcess
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CalibrationProcess> rdf:type owl:Class ;
                                                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProcedure> ,
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty ns1:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
+                                                                                                        owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#ReferenceSample>
+                                                                                                      ] ,
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty ns1:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                                                                        owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementParameter>
+                                                                                                      ] ,
                                                                                                       [ rdf:type owl:Restriction ;
                                                                                                         owl:onProperty ns1:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
                                                                                                         owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CalibrationData>
@@ -24099,21 +24093,6 @@ standards.
                                                                                       ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Sequence of operations/actions that are needed to convert the initial signal (as produced by the detector) into a meaningful and useable raw data."@en ;
                                                                                       ns1:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "In nanoindentation, the electrical signal coming from capacitive displacement gauge is converted into a real raw-displacement signal after using a proper calibration function (as obtained by the equipment manufacturer). Then, additional calibration procedures are applied to define the point of initial contact and to correct for instrument compliance, thermal drift, and indenter area function to obtain the real useable displacement data."@en ;
                                                                                       ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Usually the calibration process involve  a reference sample (with pre-defined, specific, and stable physical characteristics and known properties), in order to extract calibration data. In this way, the accuracy of the measurement tool and its components (for example the probe) will be evaluated and confirmed."@en .
-
-
-###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#CalibrationTask
-<https://w3id.org/emmo/domain/characterisation-methodology/chameo#CalibrationTask> rdf:type owl:Class ;
-                                                                                   rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationTask> ,
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty [ owl:inverseOf ns1:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a
-                                                                                                                    ] ;
-                                                                                                     owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CalibrationProcess>
-                                                                                                   ] ;
-                                                                                   rdfs:comment "Used to break-down a CalibrationProcess into his specific tasks."@en ;
-                                                                                   rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
-                                                                                   rdfs:label "CalibrationTask" ;
-                                                                                   skos:prefLabel "CalibrationTask" ;
-                                                                                   ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Used to break-down a CalibrationProcess into his specific tasks."@en .
 
 
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#Calorimetry
@@ -24337,27 +24316,12 @@ system specifications.
                                                                                                       ns1:EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6 "Measurement"@en .
 
 
-###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationMeasurementTask
-<https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationMeasurementTask> rdf:type owl:Class ;
-                                                                                                   rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationTask> ,
-                                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                                     owl:onProperty [ owl:inverseOf ns1:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a
-                                                                                                                                    ] ;
-                                                                                                                     owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationMeasurementProcess>
-                                                                                                                   ] ;
-                                                                                                   rdfs:comment "Used to break-down a CharacterisationMeasurementProcess into his specific tasks."@en ;
-                                                                                                   rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
-                                                                                                   rdfs:label "CharacterisationMeasurementTask"@en ;
-                                                                                                   skos:prefLabel "CharacterisationMeasurementTask"@en ;
-                                                                                                   ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Used to break-down a CharacterisationMeasurementProcess into his specific tasks."@en .
-
-
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProcedure
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProcedure> rdf:type owl:Class ;
                                                                                              rdfs:subClassOf ns1:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
                                                                                              rdfs:comment "Characterisation procedure may refer to the full characterisation process or just a part of the full process."@en ,
                                                                                                           "The process of performing characterisation by following some existing formalised operative rules."@en ;
-                                                                                             rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                                                                             rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                                                                              rdfs:label "CharacterisationProcedure"@en ;
                                                                                              skos:prefLabel "CharacterisationProcedure"@en ;
                                                                                              ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The process of performing characterisation by following some existing formalised operative rules."@en ;
@@ -24382,8 +24346,7 @@ Data sampling"""@en ;
 
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProperty
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProperty> rdf:type owl:Class ;
-                                                                                            rdfs:subClassOf ns1:EMMO_873b0ab3_88e6_4054_b901_5531e01f14a4 ,
-                                                                                                            <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SecondaryData> ;
+                                                                                            rdfs:subClassOf ns1:EMMO_873b0ab3_88e6_4054_b901_5531e01f14a4 ;
                                                                                             rdfs:comment "The characterisation property is the investigate property or behaviour of a sample. It is derived from the secondary data, usually after classification or quantification (manually or by a model)."@en ;
                                                                                             rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                                                                             rdfs:label "CharacterisationProperty"@en ;
@@ -25421,18 +25384,6 @@ NOTE 4 A measuring system can be used as a measurement standard."""@en ;
                                                                                     ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Mass spectrometry is a powerful analytical technique used to quantify known materials, to identify unknown compounds within a sample, and to elucidate the structure and chemical properties of different molecules."@en .
 
 
-###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing
-<https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing> rdf:type owl:Class ;
-                                                                                                 rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataPostProcessing> ;
-                                                                                                 rdfs:comment "Application of a post-processing model to signals through a software, in order to calculate the final characterisation property."@en ,
-                                                                                                              "Application of a post-processing model to signals through a software, in order to calculate the final characterisation property. Analysis of SEM (or optical) images to gain additional information (image filtering/integration/averaging, microstructural analysis, grain size evaluation, Digital Image Correlation procedures, etc.). In nanoindentation testing, this is the Oliver-Pharr method, which allows calculating the elastic modulus and hardness of the sample by using the load and depth measured signals." ;
-                                                                                                 rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
-                                                                                                 rdfs:label "MeasurementDataPostProcessing"@en ;
-                                                                                                 skos:prefLabel "MeasurementDataPostProcessing"@en ;
-                                                                                                 ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Application of a post-processing model to signals through a software, in order to calculate the final characterisation property."@en ;
-                                                                                                 ns1:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Analysis of SEM (or optical) images to gain additional information (image filtering/integration/averaging, microstructural analysis, grain size evaluation, Digital Image Correlation procedures, etc.). In nanoindentation testing, this is the Oliver-Pharr method, which allows calculating the elastic modulus and hardness of the sample by using the load and depth measured signals."@en .
-
-
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementParameter
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementParameter> rdf:type owl:Class ;
                                                                                         rdfs:subClassOf ns1:EMMO_d1d436e7_72fc_49cd_863b_7bfb4ba5276a ;
@@ -25446,12 +25397,17 @@ NOTE 4 A measuring system can be used as a measurement standard."""@en ;
 
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementSystemAdjustment
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementSystemAdjustment> rdf:type owl:Class ;
-                                                                                               rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProcedure> ;
+                                                                                               rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProcedure> ,
+                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                 owl:onProperty ns1:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+                                                                                                                 owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementParameter>
+                                                                                                               ] ;
                                                                                                rdfs:comment "Activity which has the goal of adjusting/tuning a measing instrument, without performing a measurement on a reference sample (which is a calibration). The output of this process can be a specific measurement parameter to be used in the characteriasation measurement process."@en ,
                                                                                                             "From the International Vocabulary of Metrology (VIM): Set of operations carried out on a measuring system so that it provides prescribed indications corresponding to given values of a quantity being measured. NOTE 1: If there is any doubt that the context in which the term is being used is that of metrology, the long form “adjustment of a measuring system” might be used. NOTE 2: Types of adjustment of a measuring system include zero adjustment, offset adjustment, and span adjustment (sometimes called “gain adjustment”). NOTE 3: Adjustment of a measuring system should not be confused with calibration, which is sometimes a prerequisite for adjustment. NOTE 4: After an adjustment of a measuring system, the measuring system must usually be recalibrated."@en ,
                                                                                                             "Activity which has the goal of adjusting/tuning a measing instrument, without performing a measurement on a reference sample (which is a calibration). The output of this process can be a specific measurement parameter to be used in the characteriasation measurement process. From the International Vocabulary of Metrology (VIM): Set of operations carried out on a measuring system so that it provides prescribed indications corresponding to given values of a quantity being measured. NOTE 1: If there is any doubt that the context in which the term is being used is that of metrology, the long form “adjustment of a measuring system” might be used. NOTE 2: Types of adjustment of a measuring system include zero adjustment, offset adjustment, and span adjustment (sometimes called “gain adjustment”). NOTE 3: Adjustment of a measuring system should not be confused with calibration, which is sometimes a prerequisite for adjustment. NOTE 4: After an adjustment of a measuring system, the measuring system must usually be recalibrated." ;
                                                                                                rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                                                                                rdfs:label "MeasurementSystemAdjustment" ;
+                                                                                               skos:altLabel "MeasurementParameterAdjustment" ;
                                                                                                skos:prefLabel "MeasurementSystemAdjustment" ;
                                                                                                ns1:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 "From the International Vocabulary of Metrology (VIM): Set of operations carried out on a measuring system so that it provides prescribed indications corresponding to given values of a quantity being measured. NOTE 1: If there is any doubt that the context in which the term is being used is that of metrology, the long form “adjustment of a measuring system” might be used. NOTE 2: Types of adjustment of a measuring system include zero adjustment, offset adjustment, and span adjustment (sometimes called “gain adjustment”). NOTE 3: Adjustment of a measuring system should not be confused with calibration, which is sometimes a prerequisite for adjustment. NOTE 4: After an adjustment of a measuring system, the measuring system must usually be recalibrated."@en ;
                                                                                                ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Activity which has the goal of adjusting/tuning a measing instrument, without performing a measurement on a reference sample (which is a calibration). The output of this process can be a specific measurement parameter to be used in the characteriasation measurement process."@en ;
@@ -25651,6 +25607,17 @@ NOTE 4 A measuring system can be used as a measurement standard."""@en ;
                                                                              ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Osmometry is an advanced analytical method for determining the osmotic concentration of solutions. The osmotic – or solute – concentration of a colloidal system is expressed in osmoles (Osm) per unit of volume (Osm/L) or weight (Osm/kg)."@en .
 
 
+###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#OutlierRemoval
+<https://w3id.org/emmo/domain/characterisation-methodology/chameo#OutlierRemoval> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataFiltering> ;
+                                                                                  rdfs:comment "Outlier removal refers to the process of identifying and eliminating anomalous data points that deviate significantly from the overall pattern of a dataset. These outliers are generally considered to be observations that are unusually distant from other values and can potentially distort the results of  analyses."@en ,
+                                                                                               "" ;
+                                                                                  rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
+                                                                                  rdfs:label "OutlierRemoval" ;
+                                                                                  skos:prefLabel "OutlierRemoval" ;
+                                                                                  ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Outlier removal refers to the process of identifying and eliminating anomalous data points that deviate significantly from the overall pattern of a dataset. These outliers are generally considered to be observations that are unusually distant from other values and can potentially distort the results of  analyses."@en .
+
+
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#PhotoluminescenceMicroscopy
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#PhotoluminescenceMicroscopy> rdf:type owl:Class ;
                                                                                                rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Microscopy> ;
@@ -25817,6 +25784,14 @@ NOTE 4 A measuring system can be used as a measurement standard."""@en ;
                                                                                           rdfs:subClassOf ns1:EMMO_1efe8b96_e006_4a33_bc9a_421406cbb9f0 ,
                                                                                                           ns1:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ,
                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty ns1:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
+                                                                                                            owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Probe>
+                                                                                                          ] ,
+                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty ns1:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
+                                                                                                            owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Sample>
+                                                                                                          ] ,
+                                                                                                          [ rdf:type owl:Restriction ;
                                                                                                             owl:onProperty ns1:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
                                                                                                             owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Signal>
                                                                                                           ] ;
@@ -25982,33 +25957,73 @@ materials – Selected terms and definitions, definition 2.1.1) for both measure
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#Sample
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Sample> rdf:type owl:Class ;
                                                                           rdfs:subClassOf ns1:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
-                                                                          rdfs:comment "Portion of material selected from a larger quantity of material. The term needs to be qualified, e.g., bulk sample, representative sample, primary sample, bulked sample, test sample, etc. The term 'sample' implies the existence of a sampling error, i.e., the results obtained on the portions taken are only estimates of the concentration of a constituent or the quantity of a property present in the parent material. If there is no or negligible sampling error, the portion removed is a test portion, aliquot, or specimen."@en ,
+                                                                          rdfs:comment "Portion of material selected from a larger quantity of material. The term needs to be qualified, e.g., bulk sample, representative sample, primary sample, bulked sample, test sample, etc. The term 'sample' implies the existence of a sampling error, i.e., the results obtained on the portions taken are only estimates of the concentration of a constituent or the quantity of a property present in the parent material."@en ,
                                                                                        "" ,
                                                                                        "Sample and Specime are often used interchangeably. However in some cases the term Specimen is used to specify a portion taken under conditions such that the sampling variability cannot be assessed (usually because the population is changing), and is assumed, for convenience, to be zero." ;
                                                                           rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                                                           rdfs:label "Sample"@en ;
                                                                           skos:altLabel "Specimen" ;
                                                                           skos:prefLabel "Sample"@en ;
-                                                                          ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Portion of material selected from a larger quantity of material. The term needs to be qualified, e.g., bulk sample, representative sample, primary sample, bulked sample, test sample, etc. The term 'sample' implies the existence of a sampling error, i.e., the results obtained on the portions taken are only estimates of the concentration of a constituent or the quantity of a property present in the parent material. If there is no or negligible sampling error, the portion removed is a test portion, aliquot, or specimen."@en ;
+                                                                          ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Portion of material selected from a larger quantity of material. The term needs to be qualified, e.g., bulk sample, representative sample, primary sample, bulked sample, test sample, etc. The term 'sample' implies the existence of a sampling error, i.e., the results obtained on the portions taken are only estimates of the concentration of a constituent or the quantity of a property present in the parent material."@en ;
                                                                           ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Sample and Specime are often used interchangeably. However in some cases the term Specimen is used to specify a portion taken under conditions such that the sampling variability cannot be assessed (usually because the population is changing), and is assumed, for convenience, to be zero." .
 
 
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtraction
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtraction> rdf:type owl:Class ;
-                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProcedure> ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProcedure> ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty ns1:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                                                                      owl:someValuesFrom ns1:EMMO_4207e895_8b83_4318_996a_72cfb32acd94
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty ns1:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Sample>
+                                                                                                    ] ;
                                                                                     rdfs:comment "Act of extracting a portion (amount) of material from a larger quantity of material. This operation results in obtaining a sample representative of the batch with respect to the property or properties being investigated."@en ,
                                                                                                  "The term can be used to cover either a unit of supply or a portion for analysis. The portion taken may consist of one or more sub-samples and the batch may be the population from which the sample is taken."@en ,
                                                                                                  "" ;
-                                                                                    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
+                                                                                    rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
                                                                                     rdfs:label "SampleExtraction"@en ;
                                                                                     skos:prefLabel "SampleExtraction"@en ;
                                                                                     ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Act of extracting a portion (amount) of material from a larger quantity of material. This operation results in obtaining a sample representative of the batch with respect to the property or properties being investigated."@en ;
                                                                                     ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The term can be used to cover either a unit of supply or a portion for analysis. The portion taken may consist of one or more sub-samples and the batch may be the population from which the sample is taken."@en .
 
 
+###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtractionByCutting
+<https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtractionByCutting> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf ns1:EMMO_d5f98475_00ce_4987_99fb_262aed395e46 ,
+                                                                                                             <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtraction> ;
+                                                                                             rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> .
+
+
+###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtractionInstrument
+<https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtractionInstrument> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationHardware> ;
+                                                                                              rdfs:comment "" ;
+                                                                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
+                                                                                              rdfs:label "SampleExtractionInstrument" ;
+                                                                                              skos:prefLabel "SampleExtractionInstrument" .
+
+
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleInspection
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleInspection> rdf:type owl:Class ;
-                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProcedure> ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationProcedure> ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty ns1:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Sample>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty ns1:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleInspectionInstrument>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty ns1:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleInspectionParameter>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty ns1:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationData>
+                                                                                                    ] ;
                                                                                     rdfs:comment "Analysis of the sample in order to determine information that are relevant for the characterisation method."@en ,
                                                                                                  "" ;
                                                                                     rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> ;
@@ -26063,6 +26078,13 @@ materials – Selected terms and definitions, definition 2.1.1) for both measure
                                                                                      rdfs:label "SamplePreparation"@en ;
                                                                                      skos:prefLabel "SamplePreparation"@en ;
                                                                                      ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Sample preparation processes (e.g., machining, polishing, cutting to size, etc.) before actual observation and measurement."@en .
+
+
+###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#SamplePreparationByCutting
+<https://w3id.org/emmo/domain/characterisation-methodology/chameo#SamplePreparationByCutting> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf ns1:EMMO_d5f98475_00ce_4987_99fb_262aed395e46 ,
+                                                                                                              <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SamplePreparation> ;
+                                                                                              rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> .
 
 
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#SamplePreparationInstrument
@@ -27915,6 +27937,8 @@ raw data is a set of (unprocessed) data that is given directly as output from th
                                            rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationHardwareSpecification> ;
                                            rdfs:comment "Hardware specification during dynamic super-imposed movements."@en ;
                                            rdfs:isDefinedBy : ;
+                                           rdfs:label "DynamicHardwareSpecification" ;
+                                           skos:prefLabel "DynamicHardwareSpecification" ;
                                            ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hardware specification during dynamic super-imposed movements."@en .
 
 
@@ -27984,12 +28008,6 @@ raw data is a set of (unprocessed) data that is given directly as output from th
 #    Individuals
 #################################################################
 
-###  http://ext.org/LoadDisplacementCurve1
-<http://ext.org/LoadDisplacementCurve1> rdf:type owl:NamedIndividual ,
-                                                 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationData> ;
-                                        rdfs:isDefinedBy <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> .
-
-
 ###  https://orcid.org/0000-0002-4181-2852
 <https://orcid.org/0000-0002-4181-2852> rdf:type owl:NamedIndividual ,
                                                  foaf:Person ;
@@ -28033,7 +28051,10 @@ ns1:EMMO_08cb807c_e626_447b_863f_e2835540e918 rdf:type owl:NamedIndividual ,
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -28045,6 +28066,9 @@ ns1:EMMO_08cb807c_e626_447b_863f_e2835540e918 rdf:type owl:NamedIndividual ,
 [ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
@@ -28069,13 +28093,7 @@ ns1:EMMO_08cb807c_e626_447b_863f_e2835540e918 rdf:type owl:NamedIndividual ,
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################
@@ -28083,17 +28101,25 @@ ns1:EMMO_08cb807c_e626_447b_863f_e2835540e918 rdf:type owl:NamedIndividual ,
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-   owl:members ( <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CalibrationProcess>
-                 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationDataValidation>
-                 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationMeasurementProcess>
-                 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataAnalysis>
-                 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataPostProcessing>
-                 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataPreparation>
-                 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtraction>
-                 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleInspection>
-                 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SamplePreparation>
+   owl:members ( ns1:EMMO_1d6b63d5_9938_483c_ad62_a09ac34153c9
+                 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtractionByCutting>
+                 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SamplePreparationByCutting>
                )
  ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CalibrationProcess>
+                <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationDataValidation>
+                <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationMeasurementProcess>
+                <https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataAnalysis>
+                <https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataPostProcessing>
+                <https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataPreparation>
+                <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtraction>
+                <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleInspection>
+                <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SamplePreparation>
+              )
+] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
