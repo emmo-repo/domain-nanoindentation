@@ -11,7 +11,7 @@
 
 <https://w3id.org/emmo/domain/nanoindentation> rdf:type owl:Ontology ;
                                                 owl:versionIRI <https://w3id.org/emmo/domain/1.0.0-alpha1/nanoindentation> ;
-                                                owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/chameo> ;
+                                                owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/1.0.0/chameo> ;
                                                 <http://purl.org/dc/terms/abstract> "Nanoindentation testing ontology developed within the NanoMECommons project."@en ;
                                                 <http://purl.org/dc/terms/alternative> "NanoInd" ;
                                                 <http://purl.org/dc/terms/bibliographicCitation> "Work under review - not available yet" ;
@@ -277,7 +277,7 @@
 
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_1e60509e-ad49-581b-8b8c-d20be3cac4b0
 :EMMO_1e60509e-ad49-581b-8b8c-d20be3cac4b0 rdf:type owl:Class ;
-                                           rdfs:subClassOf :TipMovementParameter ;
+                                           rdfs:subClassOf :EMMO_cc9a215a-a135-2715-b932-02ee01c0208e ;
                                            skos:prefLabel "TipMoveBack"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The distance the indenter tip moves away from the sample surface before the indentation starts and after every single indent within a single nanoindentation measurement."@en ;
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Typically and empirically the move back value minimum possible threshold that a user could use is ten times smaller than the interindent spacing, however most of times the value is set to a higher number because the samples are not always perfectly flat or might be tilted, which can set up a risk of the indenter tip crushing on the sample surface while moving into the nanoindenter chamber between the current and the next nanoindent location (which has distance the interindent distance) within a single nanoindentation measurement."@en .
@@ -621,7 +621,7 @@
 
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_6e3f1c2d-e82d-4fc4-a3e7-1de969667f81
 :EMMO_6e3f1c2d-e82d-4fc4-a3e7-1de969667f81 rdf:type owl:Class ;
-                                           rdfs:subClassOf :TipMovementParameter ;
+                                           rdfs:subClassOf :EMMO_cc9a215a-a135-2715-b932-02ee01c0208e ;
                                            rdfs:label "TipMovementRate"@en ;
                                            skos:prefLabel "TipMovementRate"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It is the rate of the vertical movement of an indenter head, and correspondingly, tip."@en .
@@ -629,7 +629,7 @@
 
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_7417ea84-ca1c-5ef3-821c-0007b220ecba
 :EMMO_7417ea84-ca1c-5ef3-821c-0007b220ecba rdf:type owl:Class ;
-                                           rdfs:subClassOf :TipMovementParameter ;
+                                           rdfs:subClassOf :EMMO_cc9a215a-a135-2715-b932-02ee01c0208e ;
                                            skos:prefLabel "TargetUnloadTime"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The duration of the unloading phase of the measurement."@en .
 
@@ -657,7 +657,7 @@
 
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_7fbd8a15-7c9d-5c36-a9a6-68291d90d144
 :EMMO_7fbd8a15-7c9d-5c36-a9a6-68291d90d144 rdf:type owl:Class ;
-                                           rdfs:subClassOf :TipMovementParameter ;
+                                           rdfs:subClassOf :EMMO_cc9a215a-a135-2715-b932-02ee01c0208e ;
                                            skos:prefLabel "TargetLoadingTimeOnSample"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The duration the selected load is being applied to the sample."@en .
 
@@ -778,7 +778,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
 
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_9cd8f505-aad8-5554-a143-fdf7507ec7ec
 :EMMO_9cd8f505-aad8-5554-a143-fdf7507ec7ec rdf:type owl:Class ;
-                                           rdfs:subClassOf :TipMovementParameter ;
+                                           rdfs:subClassOf :EMMO_cc9a215a-a135-2715-b932-02ee01c0208e ;
                                            skos:prefLabel "NanoindentationTime"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The total duration of a nanoindentation test to be completed." .
 
@@ -951,8 +951,8 @@ raw data is a set of (unprocessed) data that is given directly as output from th
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_bb9c215e-c135-2735-b932-02ee01c0208e
 :EMMO_bb9c215e-c135-2735-b932-02ee01c0208e rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationHardwareSpecification ;
-                                           rdfs:label "StaticProperties"@en ;
-                                           skos:prefLabel "StaticProperties"@en ;
+                                           rdfs:label "StaticProperty"@en ;
+                                           skos:prefLabel "StaticProperty"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hardware specification during quasi-static movements."@en .
 
 
@@ -1125,7 +1125,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
 
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_da48432d-7f82-4e50-9976-0f57dbfd6cb1
 :EMMO_da48432d-7f82-4e50-9976-0f57dbfd6cb1 rdf:type owl:Class ;
-                                           rdfs:subClassOf :TipMovementParameter ;
+                                           rdfs:subClassOf :EMMO_cc9a215a-a135-2715-b932-02ee01c0208e ;
                                            rdfs:label "HoldingTime"@en ;
                                            skos:prefLabel "HoldingTime"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It represents the time that the indenter tip remains in contact with the sample surface at a prespecified target load or depth."@en .
@@ -1264,15 +1264,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
 
 ###  https://w3id.org/emmo/domain/nanoindentation#SpringStiffness
 :SpringStiffness rdf:type owl:Class ;
-                 rdfs:subClassOf :StaticProperties .
-
-
-###  https://w3id.org/emmo/domain/nanoindentation#StaticProperties
-:StaticProperties rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/nanoindentation#TipMovementParameter
-:TipMovementParameter rdf:type owl:Class .
+                 rdfs:subClassOf :EMMO_bb9c215e-c135-2735-b932-02ee01c0208e .
 
 
 ###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
