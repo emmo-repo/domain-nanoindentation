@@ -10,7 +10,7 @@
 @base <https://w3id.org/emmo/domain/nanoindentation#> .
 
 <https://w3id.org/emmo/domain/nanoindentation> rdf:type owl:Ontology ;
-                                                owl:versionIRI <https://w3id.org/emmo/domain/1.0.0-beta1/nanoindentation> ;
+                                                owl:versionIRI <https://w3id.org/emmo/domain/nanoindentation/1.0.0-beta1/nanoindentation> ;
                                                 owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/1.0.0/chameo> ;
                                                 <http://purl.org/dc/terms/abstract> "Nanoindentation testing ontology developed within the NanoMECommons project."@en ;
                                                 <http://purl.org/dc/terms/alternative> "NanoInd" ;
