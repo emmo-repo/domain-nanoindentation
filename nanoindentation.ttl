@@ -7,7 +7,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix chameo: <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> .
-@base <https://w3id.org/emmo/domain/nanoindentation#> .
+@base <https://w3id.org/emmo/domain/nanoindentation> .
 
 <https://w3id.org/emmo/domain/nanoindentation> rdf:type owl:Ontology ;
                                                 owl:versionIRI <https://w3id.org/emmo/domain/nanoindentation/1.0.0-beta1/nanoindentation> ;
@@ -141,15 +141,7 @@
 
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_03b8d505-34b6-49e4-8562-f303b1d4315a
 :EMMO_03b8d505-34b6-49e4-8562-f303b1d4315a rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_e78d6d05-c2d4-48a5-be30-e2a9df3d7852 ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
-                                                             owl:someValuesFrom :EMMO_a69e8716-a4a6-4473-a59f-146ebd991fa6
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                             owl:someValuesFrom :EMMO_8b35a71c-caf2-49c5-bfcc-18bb33f1a4e0
-                                                           ] ;
+                                           rdfs:subClassOf :EMMO_e78d6d05-c2d4-48a5-be30-e2a9df3d7852 ;
                                            rdfs:label "NanoindentationContactArea"@en ;
                                            skos:prefLabel "NanoindentationContactArea"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The nanoindentation contact area describes the area of contact between the tip and the sample surface."@en ;
@@ -202,7 +194,7 @@
 :EMMO_09591a7a-39f9-550f-8b87-77bb34f4fb2f rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:CharacterisationMeasurementInstrument ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
                                                              owl:someValuesFrom :EMMO_ea7f0dd1-87af-5147-a9b9-b085e22a2e06
                                                            ] ;
                                            rdfs:label "Nanoindenter"@en ;
@@ -404,11 +396,7 @@
 
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_3b2fb3fa-f67f-57a5-8fc9-3dcfccf3cdfa
 :EMMO_3b2fb3fa-f67f-57a5-8fc9-3dcfccf3cdfa rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_5399516a-f2ef-525e-92d9-eee82051ec8a ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
-                                                             owl:someValuesFrom :EMMO_5a0e2d14-1712-419e-85e2-95146e489b98
-                                                           ] ;
+                                           rdfs:subClassOf :EMMO_5399516a-f2ef-525e-92d9-eee82051ec8a ;
                                            skos:prefLabel "DisplacementControlled"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It is the control mode that the user sets a maximum depth for the measurement to reach and stop the load application."@en ;
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The user sets the desired maximum displacement where the indenter penetrates the sample, which is used as stop condition."@en .
@@ -512,11 +500,11 @@
 :EMMO_523303f9-ceb8-5145-adc5-b6acb5d309fa rdf:type owl:Class ;
                                            rdfs:subClassOf chameo:Probe ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
                                                              owl:someValuesFrom :EMMO_3083dcb1-3299-4c1f-8636-e02e7bcdc496
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
                                                              owl:someValuesFrom :EMMO_a518471c-b749-5c03-bc7e-04f2aba1906e
                                                            ] ;
                                            rdfs:label "IndenterHead"@en ;
@@ -636,11 +624,7 @@
 
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_755dd2db-9d48-42b9-8f68-fffe55cb6edb
 :EMMO_755dd2db-9d48-42b9-8f68-fffe55cb6edb rdf:type owl:Class ;
-                                           rdfs:subClassOf chameo:PostProcessingModel ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
-                                                             owl:someValuesFrom :EMMO_e88b7313-1ce5-408e-a2d6-6886d70a5460
-                                                           ] ;
+                                           rdfs:subClassOf chameo:PostProcessingModel ;
                                            rdfs:label "MachineLearningModel"@en ;
                                            skos:prefLabel "MachineLearningModel"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to the machine learning algorithm that is used to model the data patterns."@en ;
@@ -714,15 +698,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
 
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_8b35a71c-caf2-49c5-bfcc-18bb33f1a4e0
 :EMMO_8b35a71c-caf2-49c5-bfcc-18bb33f1a4e0 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_5ea270f0-5b79-544b-ad00-dc3737033d75 ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
-                                                             owl:someValuesFrom :EMMO_a69e8716-a4a6-4473-a59f-146ebd991fa6
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
-                                                             owl:someValuesFrom :EMMO_03b8d505-34b6-49e4-8562-f303b1d4315a
-                                                           ] ;
+                                           rdfs:subClassOf :EMMO_5ea270f0-5b79-544b-ad00-dc3737033d75 ;
                                            rdfs:label "TipAreaFunction"@en ;
                                            skos:prefLabel "TipAreaFunction"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "TipAreaFunction is the relation that is exported by polynomial fitting the nanoindentation data of contact depth and contact area from the calibration experiment using a reference sample. This relation calculates the contact area of non reference samples tested using as input the nanoindentation contact depth."@en .
@@ -745,11 +721,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
 
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_93cc4b17-9a8e-54e2-87eb-7853c7be60f8
 :EMMO_93cc4b17-9a8e-54e2-87eb-7853c7be60f8 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_5399516a-f2ef-525e-92d9-eee82051ec8a ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
-                                                             owl:someValuesFrom :EMMO_86b9592f-d4fe-484e-8cf3-d51d91aed6d5
-                                                           ] ;
+                                           rdfs:subClassOf :EMMO_5399516a-f2ef-525e-92d9-eee82051ec8a ;
                                            skos:prefLabel "StrainRateControlled"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It is the control mode that the user sets a constant strain rate for the measurement to maintain and stop the load application when specific load or displacement is reached."@en ;
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The user sets the desired strain rate to be applied to the sample."@en .
@@ -1071,11 +1043,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
 
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_d06413c3-11c5-5d8f-afc9-333ef8464a1b
 :EMMO_d06413c3-11c5-5d8f-afc9-333ef8464a1b rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_5399516a-f2ef-525e-92d9-eee82051ec8a ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
-                                                             owl:someValuesFrom :EMMO_dd3442d3-3dfa-4be6-be6e-68f0eaed1476
-                                                           ] ;
+                                           rdfs:subClassOf :EMMO_5399516a-f2ef-525e-92d9-eee82051ec8a ;
                                            skos:prefLabel "LoadControlled"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It is the control mode that the user sets a maximum force for the measurement to reach and stop the load application."@en ;
                                            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The user sets the desired maximum load to be applied on the sample, which is the measurement stop condition."@en .
@@ -1238,11 +1206,7 @@ raw data is a set of (unprocessed) data that is given directly as output from th
 
 ###  https://w3id.org/emmo/domain/nanoindentation#EMMO_fd9e155e-c995-5237-b930-02ad04c0208f
 :EMMO_fd9e155e-c995-5237-b930-02ad04c0208f rdf:type owl:Class ;
-                                           rdfs:subClassOf chameo:PostProcessingModel ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
-                                                             owl:someValuesFrom chameo:CharacterisationProperty
-                                                           ] ;
+                                           rdfs:subClassOf chameo:PostProcessingModel ;
                                            rdfs:label "ContactMechanicsModel"@en ;
                                            skos:prefLabel "ContactMechanicsModel"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "It corresponds to contact mechanics model that describe the physics/mechanics of interaction between tip and sample and used to process nanoindentation raw data to extract the nanomechanical properties (i.e. stiffness, hardness, elastic modulus, etc.)."@en .
