@@ -12,8 +12,8 @@ The Nanoindentation Testing ontology is built with an alignment with CHAMEO and 
 
 | Imported Ontologies | Version           |
 | ------------------- | ----------------- |
-| EMMO                | 1.0.0-beta7       |
-| CHAMEO              | 1.0.0-beta5       |
+| EMMO                | 1.0.0             |
+| CHAMEO              | 1.0.0             |
 
 
 ## Resources
